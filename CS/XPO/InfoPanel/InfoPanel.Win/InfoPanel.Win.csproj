@@ -37,4 +37,7 @@
     <PackageReference Include="DevExpress.RichEdit.Export" Version="22.2.5" />
     <PackageReference Include="DevExpress.Win.Design" Version="22.2.5" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfoPanel.Module\InfoPanel.Module.csproj" />
+  </ItemGroup>
 </Project>
