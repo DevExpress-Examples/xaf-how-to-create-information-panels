@@ -10,6 +10,7 @@ using DevExpress.XtraEditors;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.ExpressApp.Win.Utils;
 using System.Reflection;
+using DevExpress.ExpressApp.Win.Templates.Ribbon;
 
 namespace InfoPanel.Win;
 
@@ -59,6 +60,9 @@ static class Program {
 #endif
         ArgumentNullException.ThrowIfNull(connectionString);
         var winApplication = ApplicationBuilder.BuildApplication(connectionString);
+        winApplication.CreateCustomTemplate += delegate (object sender, CreateCustomTemplateEventArgs e) {
+            if (e.Context == TemplateContext.ApplicationWindow) e.Template = new LightStyleMainRibbonForm1();
+        };
 
         if (ContainsArgument(args, "updateDatabase")) {
             using var dbUpdater = new WinDBUpdater(() => winApplication);
