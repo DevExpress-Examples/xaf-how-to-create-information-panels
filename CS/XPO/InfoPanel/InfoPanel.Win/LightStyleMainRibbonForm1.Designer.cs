@@ -23,1023 +23,962 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new DevExpress.ExpressApp.Win.Templates.XafComponentResourceManager(typeof(LightStyleMainRibbonForm1));
-            this.viewSitePanel = new DevExpress.XtraEditors.PanelControl();
-            this.sidePanelActionControlContainer = new DevExpress.ExpressApp.Win.Templates.Navigation.SidePanelActionControlContainer();
-            this.ribbonControl = new DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2();
-            this.barActionContainerViewsHistoryNavigation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerViewsHistoryNavigation = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerObjectsCreation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerObjectsCreation = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerFile = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerFile = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerSave = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerSave = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerPrint = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerPrint = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerEdit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerEdit = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerUndoRedo = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerUndoRedo = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerOpenObject = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerOpenObject = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerExport = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerExport = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerRecordEdit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerRecordEdit = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerWorkflow = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerWorkflow = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerView = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerView = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerReports = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerReports = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerDefault = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerDefault = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerPanels = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerPanels = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerRecordsNavigation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerRecordsNavigation = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerFilters = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerFilters = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerSearch = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerSearch = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerFullTextSearch = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerFullTextSearch = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerViewsNavigation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerViewsNavigation = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerWindows = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerWindows = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerTools = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerTools = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerOptions = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerOptions = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerDiagnostic = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerDiagnostic = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerExit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerExit = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerAbout = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerAbout = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerMenu = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerMenu = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barActionContainerNotifications = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
-            this.barContainerNotifications = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.ribbonChooseSkinActionControl = new DevExpress.ExpressApp.Win.Templates.Ribbon.ActionControls.RibbonChooseSkinActionControl();
-            this.barConfigureSkinActionControl = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarConfigureSkinActionControl();
-            this.ribbonGallerySkins = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.skinDropDownButtonItem = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
-            this.mainBarAndDockingController = new DevExpress.XtraBars.BarAndDockingController(this.components);
-            this.barMdiChildrenListItem = new DevExpress.XtraBars.BarDockingMenuItem();
-            this.barSubItemPanels = new DevExpress.XtraBars.BarSubItem();
-            this.barContainerStatusMessages = new DevExpress.XtraBars.BarLinkContainerExItem();
-            this.barSubItemNavigationPane = new DevExpress.XtraBars.BarSubItem();
-            this.defaultPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonGroupViewsHistoryNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupObjectsCreation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupSave = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupEdit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupRecordEdit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupOpenObject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupWorkflow = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupDefault = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupRecordsNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupFilters = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupSearch = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupFullTextSearch = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.viewPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonGroupViewsNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupAppearance = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupWindows = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.defaultPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.toolsPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonGroupTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupOptions = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonGroupDiagnostic = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.windowPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
-            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
-            this.noDocumentsView = new DevExpress.XtraBars.Docking2010.Views.NoDocuments.NoDocumentsView(this.components);
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.nativeMdiView = new DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView(this.components);
-            this.viewSiteManager = new DevExpress.ExpressApp.Win.Templates.ViewSiteManager(this.components);
-            this.modelSynchronizationManager = new DevExpress.ExpressApp.Win.Templates.ModelSynchronizationManager(this.components);
-            this.formStateModelSynchronizer = new DevExpress.ExpressApp.Win.Core.FormStateModelSynchronizer(this.components);
-            this.contextMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.sidePanel = new DevExpress.XtraEditors.SidePanel();
-            ((System.ComponentModel.ISupportInitialize)(this.viewSitePanel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerViewsHistoryNavigation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerObjectsCreation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerSave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerPrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerUndoRedo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerOpenObject)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerExport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerRecordEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerWorkflow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerReports)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerDefault)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerPanels)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerRecordsNavigation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFilters)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFullTextSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerViewsNavigation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerWindows)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerTools)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerOptions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerDiagnostic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerAbout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerNotifications)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sidePanelActionControlContainer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonChooseSkinActionControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barConfigureSkinActionControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainBarAndDockingController)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noDocumentsView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nativeMdiView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contextMenu)).BeginInit();
-            this.sidePanel.SuspendLayout();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LightStyleMainRibbonForm1));
+            viewSitePanel = new DevExpress.XtraEditors.PanelControl();
+            sidePanelActionControlContainer = new DevExpress.ExpressApp.Win.Templates.Navigation.SidePanelActionControlContainer();
+            ribbonControl = new DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2();
+            barActionContainerViewsHistoryNavigation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerViewsHistoryNavigation = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerObjectsCreation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerObjectsCreation = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerFile = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerFile = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerSave = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerSave = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerPrint = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerPrint = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerEdit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerEdit = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerUndoRedo = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerUndoRedo = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerOpenObject = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerOpenObject = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerExport = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerExport = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerRecordEdit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerRecordEdit = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerWorkflow = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerWorkflow = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerView = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerView = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerReports = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerReports = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerDefault = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerDefault = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerPanels = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerPanels = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerRecordsNavigation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerRecordsNavigation = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerFilters = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerFilters = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerSearch = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerSearch = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerFullTextSearch = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerFullTextSearch = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerViewsNavigation = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerViewsNavigation = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerWindows = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerWindows = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerTools = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerTools = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerOptions = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerOptions = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerDiagnostic = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerDiagnostic = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerExit = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerExit = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerAbout = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerAbout = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerMenu = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerMenu = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barActionContainerNotifications = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer();
+            barContainerNotifications = new DevExpress.XtraBars.BarLinkContainerExItem();
+            ribbonChooseSkinActionControl = new DevExpress.ExpressApp.Win.Templates.Ribbon.ActionControls.RibbonChooseSkinActionControl();
+            ribbonGallerySkins = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            barConfigureSkinActionControl = new DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarConfigureSkinActionControl();
+            skinDropDownButtonItem = new DevExpress.XtraBars.SkinDropDownButtonItem();
+            skinPaletteRibbonGalleryBarItem = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
+            applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(components);
+            mainBarAndDockingController = new DevExpress.XtraBars.BarAndDockingController(components);
+            barMdiChildrenListItem = new DevExpress.XtraBars.BarDockingMenuItem();
+            barSubItemPanels = new DevExpress.XtraBars.BarSubItem();
+            barContainerStatusMessages = new DevExpress.XtraBars.BarLinkContainerExItem();
+            barSubItemNavigationPane = new DevExpress.XtraBars.BarSubItem();
+            defaultPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            ribbonGroupViewsHistoryNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupObjectsCreation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupSave = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupEdit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupRecordEdit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupOpenObject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupWorkflow = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupDefault = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupRecordsNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupFilters = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupSearch = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupFullTextSearch = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            viewPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            ribbonGroupViewsNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupAppearance = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupWindows = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            defaultPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            toolsPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            ribbonGroupTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupOptions = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ribbonGroupDiagnostic = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            windowPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            sidePanel = new DevExpress.XtraEditors.SidePanel();
+            dockManager = new DevExpress.XtraBars.Docking.DockManager(components);
+            documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(components);
+            noDocumentsView = new DevExpress.XtraBars.Docking2010.Views.NoDocuments.NoDocumentsView(components);
+            tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(components);
+            nativeMdiView = new DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView(components);
+            viewSiteManager = new DevExpress.ExpressApp.Win.Templates.ViewSiteManager(components);
+            modelSynchronizationManager = new DevExpress.ExpressApp.Win.Templates.ModelSynchronizationManager(components);
+            formStateModelSynchronizer = new DevExpress.ExpressApp.Win.Core.FormStateModelSynchronizer(components);
+            contextMenu = new DevExpress.XtraBars.PopupMenu(components);
+            sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            ((System.ComponentModel.ISupportInitialize)viewSitePanel).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sidePanelActionControlContainer).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ribbonControl).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerViewsHistoryNavigation).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerObjectsCreation).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerFile).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerSave).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerPrint).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerEdit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerUndoRedo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerOpenObject).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerExport).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerRecordEdit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerWorkflow).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerReports).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerDefault).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerPanels).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerRecordsNavigation).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerFilters).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerSearch).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerFullTextSearch).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerViewsNavigation).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerWindows).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerTools).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerOptions).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerDiagnostic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerExit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerAbout).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerNotifications).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ribbonChooseSkinActionControl).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barConfigureSkinActionControl).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)applicationMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)mainBarAndDockingController).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dockManager).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)documentManager).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)noDocumentsView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tabbedView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nativeMdiView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)contextMenu).BeginInit();
+            SuspendLayout();
             // 
             // viewSitePanel
             // 
-            this.viewSitePanel.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            resources.ApplyResources(this.viewSitePanel, "viewSitePanel");
-            this.viewSitePanel.Name = "viewSitePanel";
+            viewSitePanel.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            resources.ApplyResources(viewSitePanel, "viewSitePanel");
+            viewSitePanel.Name = "viewSitePanel";
+            // 
+            // sidePanelActionControlContainer
+            // 
+            sidePanelActionControlContainer.ActionCategory = "ViewsNavigation";
+            sidePanelActionControlContainer.BarSubItemNavigationPane = barSubItemNavigationPane;
+            sidePanelActionControlContainer.NavigationStyle = DevExpress.ExpressApp.Templates.ActionContainers.NavigationStyle.TreeList;
+            sidePanelActionControlContainer.SidePanel = sidePanel;
             // 
             // ribbonControl
             // 
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerViewsHistoryNavigation);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerObjectsCreation);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerFile);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerSave);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerPrint);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerEdit);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerUndoRedo);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerOpenObject);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerExport);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerRecordEdit);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerWorkflow);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerView);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerReports);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerDefault);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerPanels);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerRecordsNavigation);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerFilters);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerSearch);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerFullTextSearch);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerViewsNavigation);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerWindows);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerTools);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerOptions);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerDiagnostic);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerExit);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerAbout);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerMenu);
-            this.ribbonControl.ActionContainers.Add(this.barActionContainerNotifications);
-            this.ribbonControl.ActionControls.Add(this.ribbonChooseSkinActionControl);
-            this.ribbonControl.ActionControls.Add(this.barConfigureSkinActionControl);
-            this.ribbonControl.ApplicationButtonDropDownControl = this.applicationMenu;
-            this.ribbonControl.AutoHideEmptyItems = true;
-            this.ribbonControl.AutoUpdateMergedRibbons = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.AllowContentChangeAnimation = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Controller = this.mainBarAndDockingController;
-            this.ribbonControl.ExpandCollapseItem.Id = 0;
-            this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl.ExpandCollapseItem,
-            this.barMdiChildrenListItem,
-            this.barSubItemPanels,
-            this.barContainerViewsHistoryNavigation,
-            this.barContainerEdit,
-            this.barContainerUndoRedo,
-            this.barContainerView,
-            this.barContainerReports,
-            this.barContainerObjectsCreation,
-            this.barContainerFile,
-            this.barContainerSave,
-            this.barContainerPrint,
-            this.barContainerOpenObject,
-            this.barContainerRecordEdit,
-            this.barContainerWorkflow,
-            this.barContainerExport,
-            this.barContainerDefault,
-            this.barContainerPanels,
-            this.barContainerRecordsNavigation,
-            this.barContainerFilters,
-            this.barContainerSearch,
-            this.barContainerFullTextSearch,
-            this.barContainerViewsNavigation,
-            this.barContainerWindows,
-            this.barContainerTools,
-            this.barContainerOptions,
-            this.barContainerDiagnostic,
-            this.barContainerExit,
-            this.barContainerAbout,
-            this.barContainerMenu,
-            this.barContainerNotifications,
-            this.barContainerStatusMessages,
-            this.ribbonGallerySkins,
-            this.barSubItemNavigationPane,
-            this.skinDropDownButtonItem,
-            this.skinPaletteRibbonGalleryBarItem});
-            resources.ApplyResources(this.ribbonControl, "ribbonControl");
-            this.ribbonControl.MaxItemId = 22;
-            this.ribbonControl.Name = "ribbonControl";
-            this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.defaultPage,
-            this.viewPage,
-            this.toolsPage,
-            this.windowPage});
-            this.ribbonControl.StatusBar = this.ribbonStatusBar;
+            ribbonControl.ActionContainers.Add(barActionContainerViewsHistoryNavigation);
+            ribbonControl.ActionContainers.Add(barActionContainerObjectsCreation);
+            ribbonControl.ActionContainers.Add(barActionContainerFile);
+            ribbonControl.ActionContainers.Add(barActionContainerSave);
+            ribbonControl.ActionContainers.Add(barActionContainerPrint);
+            ribbonControl.ActionContainers.Add(barActionContainerEdit);
+            ribbonControl.ActionContainers.Add(barActionContainerUndoRedo);
+            ribbonControl.ActionContainers.Add(barActionContainerOpenObject);
+            ribbonControl.ActionContainers.Add(barActionContainerExport);
+            ribbonControl.ActionContainers.Add(barActionContainerRecordEdit);
+            ribbonControl.ActionContainers.Add(barActionContainerWorkflow);
+            ribbonControl.ActionContainers.Add(barActionContainerView);
+            ribbonControl.ActionContainers.Add(barActionContainerReports);
+            ribbonControl.ActionContainers.Add(barActionContainerDefault);
+            ribbonControl.ActionContainers.Add(barActionContainerPanels);
+            ribbonControl.ActionContainers.Add(barActionContainerRecordsNavigation);
+            ribbonControl.ActionContainers.Add(barActionContainerFilters);
+            ribbonControl.ActionContainers.Add(barActionContainerSearch);
+            ribbonControl.ActionContainers.Add(barActionContainerFullTextSearch);
+            ribbonControl.ActionContainers.Add(barActionContainerViewsNavigation);
+            ribbonControl.ActionContainers.Add(barActionContainerWindows);
+            ribbonControl.ActionContainers.Add(barActionContainerTools);
+            ribbonControl.ActionContainers.Add(barActionContainerOptions);
+            ribbonControl.ActionContainers.Add(barActionContainerDiagnostic);
+            ribbonControl.ActionContainers.Add(barActionContainerExit);
+            ribbonControl.ActionContainers.Add(barActionContainerAbout);
+            ribbonControl.ActionContainers.Add(barActionContainerMenu);
+            ribbonControl.ActionContainers.Add(barActionContainerNotifications);
+            ribbonControl.ActionControls.Add(ribbonChooseSkinActionControl);
+            ribbonControl.ActionControls.Add(barConfigureSkinActionControl);
+            ribbonControl.AllowContentChangeAnimation = DevExpress.Utils.DefaultBoolean.False;
+            ribbonControl.ApplicationButtonDropDownControl = applicationMenu;
+            resources.ApplyResources(ribbonControl, "ribbonControl");
+            ribbonControl.AutoHideEmptyItems = true;
+            ribbonControl.AutoUpdateMergedRibbons = DevExpress.Utils.DefaultBoolean.True;
+            ribbonControl.Controller = mainBarAndDockingController;
+            ribbonControl.EmptyAreaImageOptions.ImagePadding = new Padding(45, 44, 45, 44);
+            ribbonControl.ExpandCollapseItem.Id = 0;
+            ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl.ExpandCollapseItem, barMdiChildrenListItem, barSubItemPanels, barContainerViewsHistoryNavigation, barContainerEdit, barContainerUndoRedo, barContainerView, barContainerReports, barContainerObjectsCreation, barContainerFile, barContainerSave, barContainerPrint, barContainerOpenObject, barContainerRecordEdit, barContainerWorkflow, barContainerExport, barContainerDefault, barContainerPanels, barContainerRecordsNavigation, barContainerFilters, barContainerSearch, barContainerFullTextSearch, barContainerViewsNavigation, barContainerWindows, barContainerTools, barContainerOptions, barContainerDiagnostic, barContainerExit, barContainerAbout, barContainerMenu, barContainerNotifications, barContainerStatusMessages, ribbonGallerySkins, barSubItemNavigationPane, skinDropDownButtonItem, skinPaletteRibbonGalleryBarItem, ribbonControl.SearchEditItem });
+            ribbonControl.MaxItemId = 22;
+            ribbonControl.Name = "ribbonControl";
+            ribbonControl.OptionsMenuMinWidth = 495;
+            ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] { defaultPage, viewPage, toolsPage, windowPage });
+            ribbonControl.StatusBar = ribbonStatusBar;
             // 
             // barActionContainerViewsHistoryNavigation
             // 
-            this.barActionContainerViewsHistoryNavigation.ActionCategory = "ViewsHistoryNavigation";
-            this.barActionContainerViewsHistoryNavigation.BarContainerItem = this.barContainerViewsHistoryNavigation;
-            this.barActionContainerViewsHistoryNavigation.IsMenuMode = true;
+            barActionContainerViewsHistoryNavigation.ActionCategory = "ViewsHistoryNavigation";
+            barActionContainerViewsHistoryNavigation.BarContainerItem = barContainerViewsHistoryNavigation;
+            barActionContainerViewsHistoryNavigation.IsMenuMode = true;
             // 
             // barContainerViewsHistoryNavigation
             // 
-            resources.ApplyResources(this.barContainerViewsHistoryNavigation, "barContainerViewsHistoryNavigation");
-            this.barContainerViewsHistoryNavigation.Id = 35;
-            this.barContainerViewsHistoryNavigation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerViewsHistoryNavigation.Name = "barContainerViewsHistoryNavigation";
+            resources.ApplyResources(barContainerViewsHistoryNavigation, "barContainerViewsHistoryNavigation");
+            barContainerViewsHistoryNavigation.Id = 35;
+            barContainerViewsHistoryNavigation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerViewsHistoryNavigation.Name = "barContainerViewsHistoryNavigation";
             // 
             // barActionContainerObjectsCreation
             // 
-            this.barActionContainerObjectsCreation.ActionCategory = "ObjectsCreation";
-            this.barActionContainerObjectsCreation.BarContainerItem = this.barContainerObjectsCreation;
+            barActionContainerObjectsCreation.ActionCategory = "ObjectsCreation";
+            barActionContainerObjectsCreation.BarContainerItem = barContainerObjectsCreation;
             // 
             // barContainerObjectsCreation
             // 
-            resources.ApplyResources(this.barContainerObjectsCreation, "barContainerObjectsCreation");
-            this.barContainerObjectsCreation.Id = 18;
-            this.barContainerObjectsCreation.MergeOrder = 1;
-            this.barContainerObjectsCreation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerObjectsCreation.Name = "barContainerObjectsCreation";
+            resources.ApplyResources(barContainerObjectsCreation, "barContainerObjectsCreation");
+            barContainerObjectsCreation.Id = 18;
+            barContainerObjectsCreation.MergeOrder = 1;
+            barContainerObjectsCreation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerObjectsCreation.Name = "barContainerObjectsCreation";
             // 
             // barActionContainerFile
             // 
-            this.barActionContainerFile.ActionCategory = "File";
-            this.barActionContainerFile.BarContainerItem = this.barContainerFile;
+            barActionContainerFile.ActionCategory = "File";
+            barActionContainerFile.BarContainerItem = barContainerFile;
             // 
             // barContainerFile
             // 
-            resources.ApplyResources(this.barContainerFile, "barContainerFile");
-            this.barContainerFile.Id = 5;
-            this.barContainerFile.MergeOrder = 2;
-            this.barContainerFile.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerFile.Name = "barContainerFile";
+            resources.ApplyResources(barContainerFile, "barContainerFile");
+            barContainerFile.Id = 5;
+            barContainerFile.MergeOrder = 2;
+            barContainerFile.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerFile.Name = "barContainerFile";
             // 
             // barActionContainerSave
             // 
-            this.barActionContainerSave.ActionCategory = "Save";
-            this.barActionContainerSave.BarContainerItem = this.barContainerSave;
+            barActionContainerSave.ActionCategory = "Save";
+            barActionContainerSave.BarContainerItem = barContainerSave;
             // 
             // barContainerSave
             // 
-            resources.ApplyResources(this.barContainerSave, "barContainerSave");
-            this.barContainerSave.Id = 8;
-            this.barContainerSave.MergeOrder = 7;
-            this.barContainerSave.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerSave.Name = "barContainerSave";
+            resources.ApplyResources(barContainerSave, "barContainerSave");
+            barContainerSave.Id = 8;
+            barContainerSave.MergeOrder = 7;
+            barContainerSave.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerSave.Name = "barContainerSave";
             // 
             // barActionContainerPrint
             // 
-            this.barActionContainerPrint.ActionCategory = "Print";
-            this.barActionContainerPrint.BarContainerItem = this.barContainerPrint;
+            barActionContainerPrint.ActionCategory = "Print";
+            barActionContainerPrint.BarContainerItem = barContainerPrint;
             // 
             // barContainerPrint
             // 
-            resources.ApplyResources(this.barContainerPrint, "barContainerPrint");
-            this.barContainerPrint.Id = 6;
-            this.barContainerPrint.MergeOrder = 11;
-            this.barContainerPrint.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerPrint.Name = "barContainerPrint";
+            resources.ApplyResources(barContainerPrint, "barContainerPrint");
+            barContainerPrint.Id = 6;
+            barContainerPrint.MergeOrder = 11;
+            barContainerPrint.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerPrint.Name = "barContainerPrint";
             // 
             // barActionContainerEdit
             // 
-            this.barActionContainerEdit.ActionCategory = "Edit";
-            this.barActionContainerEdit.BarContainerItem = this.barContainerEdit;
+            barActionContainerEdit.ActionCategory = "Edit";
+            barActionContainerEdit.BarContainerItem = barContainerEdit;
             // 
             // barContainerEdit
             // 
-            resources.ApplyResources(this.barContainerEdit, "barContainerEdit");
-            this.barContainerEdit.Id = 9;
-            this.barContainerEdit.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerEdit.Name = "barContainerEdit";
+            resources.ApplyResources(barContainerEdit, "barContainerEdit");
+            barContainerEdit.Id = 9;
+            barContainerEdit.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerEdit.Name = "barContainerEdit";
             // 
             // barActionContainerUndoRedo
             // 
-            this.barActionContainerUndoRedo.ActionCategory = "UndoRedo";
-            this.barActionContainerUndoRedo.BarContainerItem = this.barContainerUndoRedo;
+            barActionContainerUndoRedo.ActionCategory = "UndoRedo";
+            barActionContainerUndoRedo.BarContainerItem = barContainerUndoRedo;
             // 
             // barContainerUndoRedo
             // 
-            resources.ApplyResources(this.barContainerUndoRedo, "barContainerUndoRedo");
-            this.barContainerUndoRedo.Id = 10;
-            this.barContainerUndoRedo.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerUndoRedo.Name = "barContainerUndoRedo";
+            resources.ApplyResources(barContainerUndoRedo, "barContainerUndoRedo");
+            barContainerUndoRedo.Id = 10;
+            barContainerUndoRedo.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerUndoRedo.Name = "barContainerUndoRedo";
             // 
             // barActionContainerOpenObject
             // 
-            this.barActionContainerOpenObject.ActionCategory = "OpenObject";
-            this.barActionContainerOpenObject.BarContainerItem = this.barContainerOpenObject;
+            barActionContainerOpenObject.ActionCategory = "OpenObject";
+            barActionContainerOpenObject.BarContainerItem = barContainerOpenObject;
             // 
             // barContainerOpenObject
             // 
-            resources.ApplyResources(this.barContainerOpenObject, "barContainerOpenObject");
-            this.barContainerOpenObject.Id = 9;
-            this.barContainerOpenObject.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerOpenObject.Name = "barContainerOpenObject";
+            resources.ApplyResources(barContainerOpenObject, "barContainerOpenObject");
+            barContainerOpenObject.Id = 9;
+            barContainerOpenObject.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerOpenObject.Name = "barContainerOpenObject";
             // 
             // barActionContainerExport
             // 
-            this.barActionContainerExport.ActionCategory = "Export";
-            this.barActionContainerExport.BarContainerItem = this.barContainerExport;
+            barActionContainerExport.ActionCategory = "Export";
+            barActionContainerExport.BarContainerItem = barContainerExport;
             // 
             // barContainerExport
             // 
-            resources.ApplyResources(this.barContainerExport, "barContainerExport");
-            this.barContainerExport.Id = 7;
-            this.barContainerExport.MergeOrder = 10;
-            this.barContainerExport.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerExport.Name = "barContainerExport";
+            resources.ApplyResources(barContainerExport, "barContainerExport");
+            barContainerExport.Id = 7;
+            barContainerExport.MergeOrder = 10;
+            barContainerExport.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerExport.Name = "barContainerExport";
             // 
             // barActionContainerRecordEdit
             // 
-            this.barActionContainerRecordEdit.ActionCategory = "RecordEdit";
-            this.barActionContainerRecordEdit.BarContainerItem = this.barContainerRecordEdit;
+            barActionContainerRecordEdit.ActionCategory = "RecordEdit";
+            barActionContainerRecordEdit.BarContainerItem = barContainerRecordEdit;
             // 
             // barContainerRecordEdit
             // 
-            resources.ApplyResources(this.barContainerRecordEdit, "barContainerRecordEdit");
-            this.barContainerRecordEdit.Id = 9;
-            this.barContainerRecordEdit.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerRecordEdit.Name = "barContainerRecordEdit";
+            resources.ApplyResources(barContainerRecordEdit, "barContainerRecordEdit");
+            barContainerRecordEdit.Id = 9;
+            barContainerRecordEdit.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerRecordEdit.Name = "barContainerRecordEdit";
             // 
             // barActionContainerWorkflow
             // 
-            this.barActionContainerWorkflow.ActionCategory = "Workflow";
-            this.barActionContainerWorkflow.BarContainerItem = this.barContainerWorkflow;
+            barActionContainerWorkflow.ActionCategory = "Workflow";
+            barActionContainerWorkflow.BarContainerItem = barContainerWorkflow;
             // 
             // barContainerWorkflow
             // 
-            resources.ApplyResources(this.barContainerWorkflow, "barContainerWorkflow");
-            this.barContainerWorkflow.Id = 9;
-            this.barContainerWorkflow.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerWorkflow.Name = "barContainerWorkflow";
+            resources.ApplyResources(barContainerWorkflow, "barContainerWorkflow");
+            barContainerWorkflow.Id = 9;
+            barContainerWorkflow.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerWorkflow.Name = "barContainerWorkflow";
             // 
             // barActionContainerView
             // 
-            this.barActionContainerView.ActionCategory = "View";
-            this.barActionContainerView.BarContainerItem = this.barContainerView;
+            barActionContainerView.ActionCategory = "View";
+            barActionContainerView.BarContainerItem = barContainerView;
             // 
             // barContainerView
             // 
-            resources.ApplyResources(this.barContainerView, "barContainerView");
-            this.barContainerView.Id = 12;
-            this.barContainerView.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerView.Name = "barContainerView";
+            resources.ApplyResources(barContainerView, "barContainerView");
+            barContainerView.Id = 12;
+            barContainerView.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerView.Name = "barContainerView";
             // 
             // barActionContainerReports
             // 
-            this.barActionContainerReports.ActionCategory = "Reports";
-            this.barActionContainerReports.BarContainerItem = this.barContainerReports;
+            barActionContainerReports.ActionCategory = "Reports";
+            barActionContainerReports.BarContainerItem = barContainerReports;
             // 
             // barContainerReports
             // 
-            resources.ApplyResources(this.barContainerReports, "barContainerReports");
-            this.barContainerReports.Id = 11;
-            this.barContainerReports.MergeOrder = 12;
-            this.barContainerReports.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerReports.Name = "barContainerReports";
+            resources.ApplyResources(barContainerReports, "barContainerReports");
+            barContainerReports.Id = 11;
+            barContainerReports.MergeOrder = 12;
+            barContainerReports.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerReports.Name = "barContainerReports";
             // 
             // barActionContainerDefault
             // 
-            this.barActionContainerDefault.ActionCategory = "Default";
-            this.barActionContainerDefault.BarContainerItem = this.barContainerDefault;
+            barActionContainerDefault.ActionCategory = "Default";
+            barActionContainerDefault.BarContainerItem = barContainerDefault;
             // 
             // barContainerDefault
             // 
-            resources.ApplyResources(this.barContainerDefault, "barContainerDefault");
-            this.barContainerDefault.Id = 50;
-            this.barContainerDefault.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerDefault.Name = "barContainerDefault";
+            resources.ApplyResources(barContainerDefault, "barContainerDefault");
+            barContainerDefault.Id = 50;
+            barContainerDefault.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerDefault.Name = "barContainerDefault";
             // 
             // barActionContainerPanels
             // 
-            this.barActionContainerPanels.ActionCategory = "Panels";
-            this.barActionContainerPanels.BarContainerItem = this.barContainerPanels;
-            this.barActionContainerPanels.IsMenuMode = true;
+            barActionContainerPanels.ActionCategory = "Panels";
+            barActionContainerPanels.BarContainerItem = barContainerPanels;
+            barActionContainerPanels.IsMenuMode = true;
             // 
             // barContainerPanels
             // 
-            resources.ApplyResources(this.barContainerPanels, "barContainerPanels");
-            this.barContainerPanels.Id = 16;
-            this.barContainerPanels.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerPanels.Name = "barContainerPanels";
+            resources.ApplyResources(barContainerPanels, "barContainerPanels");
+            barContainerPanels.Id = 16;
+            barContainerPanels.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerPanels.Name = "barContainerPanels";
             // 
             // barActionContainerRecordsNavigation
             // 
-            this.barActionContainerRecordsNavigation.ActionCategory = "RecordsNavigation";
-            this.barActionContainerRecordsNavigation.BarContainerItem = this.barContainerRecordsNavigation;
+            barActionContainerRecordsNavigation.ActionCategory = "RecordsNavigation";
+            barActionContainerRecordsNavigation.BarContainerItem = barContainerRecordsNavigation;
             // 
             // barContainerRecordsNavigation
             // 
-            resources.ApplyResources(this.barContainerRecordsNavigation, "barContainerRecordsNavigation");
-            this.barContainerRecordsNavigation.Id = 10;
-            this.barContainerRecordsNavigation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerRecordsNavigation.Name = "barContainerRecordsNavigation";
+            resources.ApplyResources(barContainerRecordsNavigation, "barContainerRecordsNavigation");
+            barContainerRecordsNavigation.Id = 10;
+            barContainerRecordsNavigation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerRecordsNavigation.Name = "barContainerRecordsNavigation";
             // 
             // barActionContainerFilters
             // 
-            this.barActionContainerFilters.ActionCategory = "Filters";
-            this.barActionContainerFilters.BarContainerItem = this.barContainerFilters;
+            barActionContainerFilters.ActionCategory = "Filters";
+            barActionContainerFilters.BarContainerItem = barContainerFilters;
             // 
             // barContainerFilters
             // 
-            resources.ApplyResources(this.barContainerFilters, "barContainerFilters");
-            this.barContainerFilters.Id = 26;
-            this.barContainerFilters.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerFilters.Name = "barContainerFilters";
+            resources.ApplyResources(barContainerFilters, "barContainerFilters");
+            barContainerFilters.Id = 26;
+            barContainerFilters.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerFilters.Name = "barContainerFilters";
             // 
             // barActionContainerSearch
             // 
-            this.barActionContainerSearch.ActionCategory = "Search";
-            this.barActionContainerSearch.BarContainerItem = this.barContainerSearch;
+            barActionContainerSearch.ActionCategory = "Search";
+            barActionContainerSearch.BarContainerItem = barContainerSearch;
             // 
             // barContainerSearch
             // 
-            resources.ApplyResources(this.barContainerSearch, "barContainerSearch");
-            this.barContainerSearch.Id = 11;
-            this.barContainerSearch.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerSearch.Name = "barContainerSearch";
+            resources.ApplyResources(barContainerSearch, "barContainerSearch");
+            barContainerSearch.Id = 11;
+            barContainerSearch.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerSearch.Name = "barContainerSearch";
             // 
             // barActionContainerFullTextSearch
             // 
-            this.barActionContainerFullTextSearch.ActionCategory = "FullTextSearch";
-            this.barActionContainerFullTextSearch.BarContainerItem = this.barContainerFullTextSearch;
+            barActionContainerFullTextSearch.ActionCategory = "FullTextSearch";
+            barActionContainerFullTextSearch.BarContainerItem = barContainerFullTextSearch;
             // 
             // barContainerFullTextSearch
             // 
-            resources.ApplyResources(this.barContainerFullTextSearch, "barContainerFullTextSearch");
-            this.barContainerFullTextSearch.Id = 12;
-            this.barContainerFullTextSearch.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerFullTextSearch.Name = "barContainerFullTextSearch";
+            resources.ApplyResources(barContainerFullTextSearch, "barContainerFullTextSearch");
+            barContainerFullTextSearch.Id = 12;
+            barContainerFullTextSearch.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerFullTextSearch.Name = "barContainerFullTextSearch";
             // 
             // barActionContainerViewsNavigation
             // 
-            this.barActionContainerViewsNavigation.ActionCategory = "ViewsNavigation";
-            this.barActionContainerViewsNavigation.BarContainerItem = this.barContainerViewsNavigation;
+            barActionContainerViewsNavigation.ActionCategory = "ViewsNavigation";
+            barActionContainerViewsNavigation.BarContainerItem = barContainerViewsNavigation;
             // 
             // barContainerViewsNavigation
             // 
-            resources.ApplyResources(this.barContainerViewsNavigation, "barContainerViewsNavigation");
-            this.barContainerViewsNavigation.Id = 14;
-            this.barContainerViewsNavigation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerViewsNavigation.Name = "barContainerViewsNavigation";
+            resources.ApplyResources(barContainerViewsNavigation, "barContainerViewsNavigation");
+            barContainerViewsNavigation.Id = 14;
+            barContainerViewsNavigation.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerViewsNavigation.Name = "barContainerViewsNavigation";
             // 
             // barActionContainerWindows
             // 
-            this.barActionContainerWindows.ActionCategory = "Windows";
-            this.barActionContainerWindows.BarContainerItem = this.barContainerWindows;
+            barActionContainerWindows.ActionCategory = "Windows";
+            barActionContainerWindows.BarContainerItem = barContainerWindows;
             // 
             // barContainerWindows
             // 
-            this.barContainerWindows.Id = 16;
-            this.barContainerWindows.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerWindows.Name = "barContainerWindows";
+            barContainerWindows.Id = 16;
+            barContainerWindows.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerWindows.Name = "barContainerWindows";
             // 
             // barActionContainerTools
             // 
-            this.barActionContainerTools.ActionCategory = "Tools";
-            this.barActionContainerTools.BarContainerItem = this.barContainerTools;
-            this.barActionContainerTools.IsMenuMode = true;
+            barActionContainerTools.ActionCategory = "Tools";
+            barActionContainerTools.BarContainerItem = barContainerTools;
+            barActionContainerTools.IsMenuMode = true;
             // 
             // barContainerTools
             // 
-            resources.ApplyResources(this.barContainerTools, "barContainerTools");
-            this.barContainerTools.Id = 13;
-            this.barContainerTools.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerTools.Name = "barContainerTools";
+            resources.ApplyResources(barContainerTools, "barContainerTools");
+            barContainerTools.Id = 13;
+            barContainerTools.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerTools.Name = "barContainerTools";
             // 
             // barActionContainerOptions
             // 
-            this.barActionContainerOptions.ActionCategory = "Options";
-            this.barActionContainerOptions.BarContainerItem = this.barContainerOptions;
-            this.barActionContainerOptions.IsMenuMode = true;
+            barActionContainerOptions.ActionCategory = "Options";
+            barActionContainerOptions.BarContainerItem = barContainerOptions;
+            barActionContainerOptions.IsMenuMode = true;
             // 
             // barContainerOptions
             // 
-            resources.ApplyResources(this.barContainerOptions, "barContainerOptions");
-            this.barContainerOptions.Id = 14;
-            this.barContainerOptions.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerOptions.Name = "barContainerOptions";
+            resources.ApplyResources(barContainerOptions, "barContainerOptions");
+            barContainerOptions.Id = 14;
+            barContainerOptions.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerOptions.Name = "barContainerOptions";
             // 
             // barActionContainerDiagnostic
             // 
-            this.barActionContainerDiagnostic.ActionCategory = "Diagnostic";
-            this.barActionContainerDiagnostic.BarContainerItem = this.barContainerDiagnostic;
-            this.barActionContainerDiagnostic.IsMenuMode = true;
+            barActionContainerDiagnostic.ActionCategory = "Diagnostic";
+            barActionContainerDiagnostic.BarContainerItem = barContainerDiagnostic;
+            barActionContainerDiagnostic.IsMenuMode = true;
             // 
             // barContainerDiagnostic
             // 
-            resources.ApplyResources(this.barContainerDiagnostic, "barContainerDiagnostic");
-            this.barContainerDiagnostic.Id = 16;
-            this.barContainerDiagnostic.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerDiagnostic.Name = "barContainerDiagnostic";
+            resources.ApplyResources(barContainerDiagnostic, "barContainerDiagnostic");
+            barContainerDiagnostic.Id = 16;
+            barContainerDiagnostic.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerDiagnostic.Name = "barContainerDiagnostic";
             // 
             // barActionContainerExit
             // 
-            this.barActionContainerExit.ActionCategory = "Exit";
-            this.barActionContainerExit.BarContainerItem = this.barContainerExit;
+            barActionContainerExit.ActionCategory = "Exit";
+            barActionContainerExit.BarContainerItem = barContainerExit;
             // 
             // barContainerExit
             // 
-            resources.ApplyResources(this.barContainerExit, "barContainerExit");
-            this.barContainerExit.Id = 8;
-            this.barContainerExit.MergeOrder = 900;
-            this.barContainerExit.Name = "barContainerExit";
+            resources.ApplyResources(barContainerExit, "barContainerExit");
+            barContainerExit.Id = 8;
+            barContainerExit.MergeOrder = 900;
+            barContainerExit.Name = "barContainerExit";
             // 
             // barActionContainerAbout
             // 
-            this.barActionContainerAbout.ActionCategory = "About";
-            this.barActionContainerAbout.BarContainerItem = this.barContainerAbout;
-            this.barActionContainerAbout.IsMenuMode = true;
+            barActionContainerAbout.ActionCategory = "About";
+            barActionContainerAbout.BarContainerItem = barContainerAbout;
+            barActionContainerAbout.IsMenuMode = true;
             // 
             // barContainerAbout
             // 
-            resources.ApplyResources(this.barContainerAbout, "barContainerAbout");
-            this.barContainerAbout.Id = 15;
-            this.barContainerAbout.MergeOrder = 15;
-            this.barContainerAbout.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerAbout.Name = "barContainerAbout";
+            resources.ApplyResources(barContainerAbout, "barContainerAbout");
+            barContainerAbout.Id = 15;
+            barContainerAbout.MergeOrder = 15;
+            barContainerAbout.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerAbout.Name = "barContainerAbout";
             // 
             // barActionContainerMenu
             // 
-            this.barActionContainerMenu.ActionCategory = "Menu";
-            this.barActionContainerMenu.BarContainerItem = this.barContainerMenu;
+            barActionContainerMenu.ActionCategory = "Menu";
+            barActionContainerMenu.BarContainerItem = barContainerMenu;
             // 
             // barContainerMenu
             // 
-            resources.ApplyResources(this.barContainerMenu, "barContainerMenu");
-            this.barContainerMenu.Id = 7;
-            this.barContainerMenu.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerMenu.Name = "barContainerMenu";
+            resources.ApplyResources(barContainerMenu, "barContainerMenu");
+            barContainerMenu.Id = 7;
+            barContainerMenu.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerMenu.Name = "barContainerMenu";
             // 
             // barActionContainerNotifications
             // 
-            this.barActionContainerNotifications.ActionCategory = "Notifications";
-            this.barActionContainerNotifications.BarContainerItem = this.barContainerNotifications;
+            barActionContainerNotifications.ActionCategory = "Notifications";
+            barActionContainerNotifications.BarContainerItem = barContainerNotifications;
             // 
             // barContainerNotifications
             // 
-            this.barContainerNotifications.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            resources.ApplyResources(this.barContainerNotifications, "barContainerNotifications");
-            this.barContainerNotifications.Id = 28;
-            this.barContainerNotifications.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerNotifications.Name = "barContainerNotifications";
+            barContainerNotifications.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            resources.ApplyResources(barContainerNotifications, "barContainerNotifications");
+            barContainerNotifications.Id = 28;
+            barContainerNotifications.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerNotifications.Name = "barContainerNotifications";
             // 
             // ribbonChooseSkinActionControl
             // 
-            this.ribbonChooseSkinActionControl.ActionId = "ChooseSkin";
-            this.ribbonChooseSkinActionControl.BarItem = this.ribbonGallerySkins;
+            ribbonChooseSkinActionControl.ActionId = "ChooseSkin";
+            ribbonChooseSkinActionControl.BarItem = ribbonGallerySkins;
             // 
             // ribbonGallerySkins
             // 
-            resources.ApplyResources(this.ribbonGallerySkins, "ribbonGallerySkins");
-            this.ribbonGallerySkins.Id = 1;
-            this.ribbonGallerySkins.Name = "ribbonGallerySkins";
+            resources.ApplyResources(ribbonGallerySkins, "ribbonGallerySkins");
+            ribbonGallerySkins.Id = 1;
+            ribbonGallerySkins.Name = "ribbonGallerySkins";
             // 
             // barConfigureSkinActionControl
             // 
-            this.barConfigureSkinActionControl.ActionId = "ConfigureSkin";
-            this.barConfigureSkinActionControl.BarItem = this.skinDropDownButtonItem;
-            this.barConfigureSkinActionControl.SkinPaletteBarItem = this.skinPaletteRibbonGalleryBarItem;
+            barConfigureSkinActionControl.ActionId = "ConfigureSkin";
+            barConfigureSkinActionControl.BarItem = skinDropDownButtonItem;
+            barConfigureSkinActionControl.SkinPaletteBarItem = skinPaletteRibbonGalleryBarItem;
             // 
             // skinDropDownButtonItem
             // 
-            this.skinDropDownButtonItem.Id = 20;
-            this.skinDropDownButtonItem.Name = "skinDropDownButtonItem";
+            skinDropDownButtonItem.ActAsDropDown = true;
+            skinDropDownButtonItem.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            skinDropDownButtonItem.Id = 20;
+            skinDropDownButtonItem.Name = "skinDropDownButtonItem";
             // 
             // skinPaletteRibbonGalleryBarItem
             // 
-            resources.ApplyResources(this.skinPaletteRibbonGalleryBarItem, "skinPaletteRibbonGalleryBarItem");
-            this.skinPaletteRibbonGalleryBarItem.Id = 21;
-            this.skinPaletteRibbonGalleryBarItem.Name = "skinPaletteRibbonGalleryBarItem";
+            skinPaletteRibbonGalleryBarItem.Id = 21;
+            skinPaletteRibbonGalleryBarItem.Name = "skinPaletteRibbonGalleryBarItem";
             // 
             // applicationMenu
             // 
-            this.applicationMenu.ItemLinks.Add(this.barContainerObjectsCreation, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerFile, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerSave, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerExport, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerPrint, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerReports, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerAbout, true);
-            this.applicationMenu.ItemLinks.Add(this.barContainerExit, true);
-            this.applicationMenu.MenuDrawMode = DevExpress.XtraBars.MenuDrawMode.LargeImagesText;
-            this.applicationMenu.Name = "applicationMenu";
-            this.applicationMenu.Ribbon = this.ribbonControl;
+            applicationMenu.ItemLinks.Add(barContainerObjectsCreation, true);
+            applicationMenu.ItemLinks.Add(barContainerFile, true);
+            applicationMenu.ItemLinks.Add(barContainerSave, true);
+            applicationMenu.ItemLinks.Add(barContainerExport, true);
+            applicationMenu.ItemLinks.Add(barContainerPrint, true);
+            applicationMenu.ItemLinks.Add(barContainerReports, true);
+            applicationMenu.ItemLinks.Add(barContainerAbout, true);
+            applicationMenu.ItemLinks.Add(barContainerExit, true);
+            applicationMenu.MenuDrawMode = DevExpress.XtraBars.MenuDrawMode.LargeImagesText;
+            applicationMenu.Name = "applicationMenu";
+            applicationMenu.Ribbon = ribbonControl;
             // 
             // mainBarAndDockingController
             // 
-            this.mainBarAndDockingController.PropertiesBar.AllowLinkLighting = false;
-            this.mainBarAndDockingController.PropertiesBar.DefaultGlyphSize = new System.Drawing.Size(16, 16);
-            this.mainBarAndDockingController.PropertiesBar.DefaultLargeGlyphSize = new System.Drawing.Size(32, 32);
+            mainBarAndDockingController.PropertiesBar.AllowLinkLighting = false;
             // 
             // barMdiChildrenListItem
             // 
-            resources.ApplyResources(this.barMdiChildrenListItem, "barMdiChildrenListItem");
-            this.barMdiChildrenListItem.Id = 37;
-            this.barMdiChildrenListItem.Name = "barMdiChildrenListItem";
+            resources.ApplyResources(barMdiChildrenListItem, "barMdiChildrenListItem");
+            barMdiChildrenListItem.Id = 37;
+            barMdiChildrenListItem.Name = "barMdiChildrenListItem";
             // 
             // barSubItemPanels
             // 
-            resources.ApplyResources(this.barSubItemPanels, "barSubItemPanels");
-            this.barSubItemPanels.HideWhenEmpty = true;
-            this.barSubItemPanels.Id = 7;
-            this.barSubItemPanels.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barContainerPanels, true)});
-            this.barSubItemPanels.Name = "barSubItemPanels";
+            resources.ApplyResources(barSubItemPanels, "barSubItemPanels");
+            barSubItemPanels.HideWhenEmpty = true;
+            barSubItemPanels.Id = 7;
+            barSubItemPanels.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barContainerPanels, true) });
+            barSubItemPanels.Name = "barSubItemPanels";
             // 
             // barContainerStatusMessages
             // 
-            resources.ApplyResources(this.barContainerStatusMessages, "barContainerStatusMessages");
-            this.barContainerStatusMessages.Id = 27;
-            this.barContainerStatusMessages.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
-            this.barContainerStatusMessages.Name = "barContainerStatusMessages";
+            resources.ApplyResources(barContainerStatusMessages, "barContainerStatusMessages");
+            barContainerStatusMessages.Id = 27;
+            barContainerStatusMessages.MergeType = DevExpress.XtraBars.BarMenuMerge.MergeItems;
+            barContainerStatusMessages.Name = "barContainerStatusMessages";
             // 
             // barSubItemNavigationPane
             // 
-            resources.ApplyResources(this.barSubItemNavigationPane, "barSubItemNavigationPane");
-            this.barSubItemNavigationPane.Id = 18;
-            this.barSubItemNavigationPane.Name = "barSubItemNavigationPane";
+            resources.ApplyResources(barSubItemNavigationPane, "barSubItemNavigationPane");
+            barSubItemNavigationPane.Id = 18;
+            barSubItemNavigationPane.Name = "barSubItemNavigationPane";
             // 
             // defaultPage
             // 
-            this.defaultPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonGroupViewsHistoryNavigation,
-            this.ribbonGroupObjectsCreation,
-            this.ribbonGroupSave,
-            this.ribbonGroupEdit,
-            this.ribbonGroupRecordEdit,
-            this.ribbonGroupOpenObject,
-            this.ribbonGroupWorkflow,
-            this.ribbonGroupView,
-            this.ribbonGroupDefault,
-            this.ribbonGroupRecordsNavigation,
-            this.ribbonGroupFilters,
-            this.ribbonGroupSearch,
-            this.ribbonGroupFullTextSearch});
-            this.defaultPage.Name = "defaultPage";
-            resources.ApplyResources(this.defaultPage, "defaultPage");
+            defaultPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonGroupViewsHistoryNavigation, ribbonGroupObjectsCreation, ribbonGroupSave, ribbonGroupEdit, ribbonGroupRecordEdit, ribbonGroupOpenObject, ribbonGroupWorkflow, ribbonGroupView, ribbonGroupDefault, ribbonGroupRecordsNavigation, ribbonGroupFilters, ribbonGroupSearch, ribbonGroupFullTextSearch });
+            defaultPage.Name = "defaultPage";
+            resources.ApplyResources(defaultPage, "defaultPage");
             // 
             // ribbonGroupViewsHistoryNavigation
             // 
-            this.ribbonGroupViewsHistoryNavigation.AllowTextClipping = false;
-            this.ribbonGroupViewsHistoryNavigation.ItemLinks.Add(this.barContainerViewsHistoryNavigation);
-            this.ribbonGroupViewsHistoryNavigation.Name = "ribbonGroupViewsHistoryNavigation";
-            this.ribbonGroupViewsHistoryNavigation.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupViewsHistoryNavigation, "ribbonGroupViewsHistoryNavigation");
+            ribbonGroupViewsHistoryNavigation.AllowTextClipping = false;
+            ribbonGroupViewsHistoryNavigation.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupViewsHistoryNavigation.ItemLinks.Add(barContainerViewsHistoryNavigation);
+            ribbonGroupViewsHistoryNavigation.Name = "ribbonGroupViewsHistoryNavigation";
+            resources.ApplyResources(ribbonGroupViewsHistoryNavigation, "ribbonGroupViewsHistoryNavigation");
             // 
             // ribbonGroupObjectsCreation
             // 
-            this.ribbonGroupObjectsCreation.AllowTextClipping = false;
-            this.ribbonGroupObjectsCreation.ItemLinks.Add(this.barContainerObjectsCreation);
-            this.ribbonGroupObjectsCreation.Name = "ribbonGroupObjectsCreation";
-            this.ribbonGroupObjectsCreation.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupObjectsCreation, "ribbonGroupObjectsCreation");
+            ribbonGroupObjectsCreation.AllowTextClipping = false;
+            ribbonGroupObjectsCreation.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupObjectsCreation.ItemLinks.Add(barContainerObjectsCreation);
+            ribbonGroupObjectsCreation.Name = "ribbonGroupObjectsCreation";
+            resources.ApplyResources(ribbonGroupObjectsCreation, "ribbonGroupObjectsCreation");
             // 
             // ribbonGroupSave
             // 
-            this.ribbonGroupSave.AllowTextClipping = false;
-            this.ribbonGroupSave.ItemLinks.Add(this.barContainerSave);
-            this.ribbonGroupSave.Name = "ribbonGroupSave";
-            this.ribbonGroupSave.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupSave, "ribbonGroupSave");
+            ribbonGroupSave.AllowTextClipping = false;
+            ribbonGroupSave.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupSave.ItemLinks.Add(barContainerSave);
+            ribbonGroupSave.Name = "ribbonGroupSave";
+            resources.ApplyResources(ribbonGroupSave, "ribbonGroupSave");
             // 
             // ribbonGroupEdit
             // 
-            this.ribbonGroupEdit.AllowTextClipping = false;
-            this.ribbonGroupEdit.ItemLinks.Add(this.barContainerEdit);
-            this.ribbonGroupEdit.ItemLinks.Add(this.barContainerUndoRedo);
-            this.ribbonGroupEdit.Name = "ribbonGroupEdit";
-            this.ribbonGroupEdit.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupEdit, "ribbonGroupEdit");
+            ribbonGroupEdit.AllowTextClipping = false;
+            ribbonGroupEdit.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupEdit.ItemLinks.Add(barContainerEdit);
+            ribbonGroupEdit.ItemLinks.Add(barContainerUndoRedo);
+            ribbonGroupEdit.Name = "ribbonGroupEdit";
+            resources.ApplyResources(ribbonGroupEdit, "ribbonGroupEdit");
             // 
             // ribbonGroupRecordEdit
             // 
-            this.ribbonGroupRecordEdit.AllowTextClipping = false;
-            this.ribbonGroupRecordEdit.ItemLinks.Add(this.barContainerRecordEdit);
-            this.ribbonGroupRecordEdit.Name = "ribbonGroupRecordEdit";
-            this.ribbonGroupRecordEdit.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupRecordEdit, "ribbonGroupRecordEdit");
+            ribbonGroupRecordEdit.AllowTextClipping = false;
+            ribbonGroupRecordEdit.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupRecordEdit.ItemLinks.Add(barContainerRecordEdit);
+            ribbonGroupRecordEdit.Name = "ribbonGroupRecordEdit";
+            resources.ApplyResources(ribbonGroupRecordEdit, "ribbonGroupRecordEdit");
             // 
             // ribbonGroupOpenObject
             // 
-            this.ribbonGroupOpenObject.AllowTextClipping = false;
-            this.ribbonGroupOpenObject.ItemLinks.Add(this.barContainerOpenObject);
-            this.ribbonGroupOpenObject.Name = "ribbonGroupOpenObject";
-            this.ribbonGroupOpenObject.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupOpenObject, "ribbonGroupOpenObject");
+            ribbonGroupOpenObject.AllowTextClipping = false;
+            ribbonGroupOpenObject.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupOpenObject.ItemLinks.Add(barContainerOpenObject);
+            ribbonGroupOpenObject.Name = "ribbonGroupOpenObject";
+            resources.ApplyResources(ribbonGroupOpenObject, "ribbonGroupOpenObject");
             // 
             // ribbonGroupWorkflow
             // 
-            this.ribbonGroupWorkflow.AllowTextClipping = false;
-            this.ribbonGroupWorkflow.ItemLinks.Add(this.barContainerWorkflow);
-            this.ribbonGroupWorkflow.Name = "ribbonGroupWorkflow";
-            this.ribbonGroupWorkflow.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupWorkflow, "ribbonGroupWorkflow");
+            ribbonGroupWorkflow.AllowTextClipping = false;
+            ribbonGroupWorkflow.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupWorkflow.ItemLinks.Add(barContainerWorkflow);
+            ribbonGroupWorkflow.Name = "ribbonGroupWorkflow";
+            resources.ApplyResources(ribbonGroupWorkflow, "ribbonGroupWorkflow");
             // 
             // ribbonGroupView
             // 
-            this.ribbonGroupView.AllowTextClipping = false;
-            this.ribbonGroupView.ItemLinks.Add(this.barContainerView);
-            this.ribbonGroupView.ItemLinks.Add(this.barContainerReports);
-            this.ribbonGroupView.Name = "ribbonGroupView";
-            this.ribbonGroupView.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupView, "ribbonGroupView");
+            ribbonGroupView.AllowTextClipping = false;
+            ribbonGroupView.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupView.ItemLinks.Add(barContainerView);
+            ribbonGroupView.ItemLinks.Add(barContainerReports);
+            ribbonGroupView.Name = "ribbonGroupView";
+            resources.ApplyResources(ribbonGroupView, "ribbonGroupView");
             // 
             // ribbonGroupDefault
             // 
-            this.ribbonGroupDefault.AllowTextClipping = false;
-            this.ribbonGroupDefault.ItemLinks.Add(this.barContainerDefault);
-            this.ribbonGroupDefault.Name = "ribbonGroupDefault";
-            this.ribbonGroupDefault.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupDefault, "ribbonGroupDefault");
+            ribbonGroupDefault.AllowTextClipping = false;
+            ribbonGroupDefault.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupDefault.ItemLinks.Add(barContainerDefault);
+            ribbonGroupDefault.Name = "ribbonGroupDefault";
+            resources.ApplyResources(ribbonGroupDefault, "ribbonGroupDefault");
             // 
             // ribbonGroupRecordsNavigation
             // 
-            this.ribbonGroupRecordsNavigation.AllowTextClipping = false;
-            this.ribbonGroupRecordsNavigation.ItemLinks.Add(this.barContainerRecordsNavigation);
-            this.ribbonGroupRecordsNavigation.Name = "ribbonGroupRecordsNavigation";
-            this.ribbonGroupRecordsNavigation.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupRecordsNavigation, "ribbonGroupRecordsNavigation");
+            ribbonGroupRecordsNavigation.AllowTextClipping = false;
+            ribbonGroupRecordsNavigation.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupRecordsNavigation.ItemLinks.Add(barContainerRecordsNavigation);
+            ribbonGroupRecordsNavigation.Name = "ribbonGroupRecordsNavigation";
+            resources.ApplyResources(ribbonGroupRecordsNavigation, "ribbonGroupRecordsNavigation");
             // 
             // ribbonGroupFilters
             // 
-            this.ribbonGroupFilters.AllowTextClipping = false;
-            this.ribbonGroupFilters.ItemLinks.Add(this.barContainerFilters);
-            this.ribbonGroupFilters.Name = "ribbonGroupFilters";
-            this.ribbonGroupFilters.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupFilters, "ribbonGroupFilters");
+            ribbonGroupFilters.AllowTextClipping = false;
+            ribbonGroupFilters.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupFilters.ItemLinks.Add(barContainerFilters);
+            ribbonGroupFilters.Name = "ribbonGroupFilters";
+            resources.ApplyResources(ribbonGroupFilters, "ribbonGroupFilters");
             // 
             // ribbonGroupSearch
             // 
-            this.ribbonGroupSearch.AllowTextClipping = false;
-            this.ribbonGroupSearch.ItemLinks.Add(this.barContainerSearch);
-            this.ribbonGroupSearch.Name = "ribbonGroupSearch";
-            this.ribbonGroupSearch.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupSearch, "ribbonGroupSearch");
+            ribbonGroupSearch.AllowTextClipping = false;
+            ribbonGroupSearch.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupSearch.ItemLinks.Add(barContainerSearch);
+            ribbonGroupSearch.Name = "ribbonGroupSearch";
+            resources.ApplyResources(ribbonGroupSearch, "ribbonGroupSearch");
             // 
             // ribbonGroupFullTextSearch
             // 
-            this.ribbonGroupFullTextSearch.AllowTextClipping = false;
-            this.ribbonGroupFullTextSearch.ItemLinks.Add(this.barContainerFullTextSearch);
-            this.ribbonGroupFullTextSearch.Name = "ribbonGroupFullTextSearch";
-            this.ribbonGroupFullTextSearch.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupFullTextSearch, "ribbonGroupFullTextSearch");
+            ribbonGroupFullTextSearch.AllowTextClipping = false;
+            ribbonGroupFullTextSearch.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupFullTextSearch.ItemLinks.Add(barContainerFullTextSearch);
+            ribbonGroupFullTextSearch.Name = "ribbonGroupFullTextSearch";
+            resources.ApplyResources(ribbonGroupFullTextSearch, "ribbonGroupFullTextSearch");
             // 
             // viewPage
             // 
-            this.viewPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonGroupViewsNavigation,
-            this.ribbonGroupAppearance,
-            this.ribbonGroupWindows,
-            this.defaultPageGroup});
-            this.viewPage.Name = "viewPage";
-            resources.ApplyResources(this.viewPage, "viewPage");
+            viewPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonGroupViewsNavigation, ribbonGroupAppearance, ribbonGroupWindows, defaultPageGroup });
+            viewPage.Name = "viewPage";
+            resources.ApplyResources(viewPage, "viewPage");
             // 
             // ribbonGroupViewsNavigation
             // 
-            this.ribbonGroupViewsNavigation.AllowTextClipping = false;
-            this.ribbonGroupViewsNavigation.ItemLinks.Add(this.barContainerViewsNavigation);
-            this.ribbonGroupViewsNavigation.ItemLinks.Add(this.barSubItemNavigationPane);
-            this.ribbonGroupViewsNavigation.MergeOrder = 0;
-            this.ribbonGroupViewsNavigation.Name = "ribbonGroupViewsNavigation";
-            this.ribbonGroupViewsNavigation.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupViewsNavigation, "ribbonGroupViewsNavigation");
+            ribbonGroupViewsNavigation.AllowTextClipping = false;
+            ribbonGroupViewsNavigation.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupViewsNavigation.ItemLinks.Add(barContainerViewsNavigation);
+            ribbonGroupViewsNavigation.ItemLinks.Add(barSubItemNavigationPane);
+            ribbonGroupViewsNavigation.MergeOrder = 0;
+            ribbonGroupViewsNavigation.Name = "ribbonGroupViewsNavigation";
+            resources.ApplyResources(ribbonGroupViewsNavigation, "ribbonGroupViewsNavigation");
             // 
             // ribbonGroupAppearance
             // 
-            this.ribbonGroupAppearance.AllowTextClipping = false;
-            this.ribbonGroupAppearance.ItemLinks.Add(this.ribbonGallerySkins);
-            this.ribbonGroupAppearance.ItemLinks.Add(this.skinDropDownButtonItem);
-            this.ribbonGroupAppearance.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem);
-            this.ribbonGroupAppearance.MergeOrder = 1;
-            this.ribbonGroupAppearance.Name = "ribbonGroupAppearance";
-            this.ribbonGroupAppearance.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupAppearance, "ribbonGroupAppearance");
+            ribbonGroupAppearance.AllowTextClipping = false;
+            ribbonGroupAppearance.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupAppearance.ItemLinks.Add(ribbonGallerySkins);
+            ribbonGroupAppearance.ItemLinks.Add(skinDropDownButtonItem);
+            ribbonGroupAppearance.ItemLinks.Add(skinPaletteRibbonGalleryBarItem);
+            ribbonGroupAppearance.MergeOrder = 1;
+            ribbonGroupAppearance.Name = "ribbonGroupAppearance";
+            resources.ApplyResources(ribbonGroupAppearance, "ribbonGroupAppearance");
             // 
             // ribbonGroupWindows
             // 
-            this.ribbonGroupWindows.AllowTextClipping = false;
-            this.ribbonGroupWindows.ItemLinks.Add(this.barMdiChildrenListItem);
-            this.ribbonGroupWindows.ItemLinks.Add(this.barContainerWindows);
-            this.ribbonGroupWindows.MergeOrder = 2;
-            this.ribbonGroupWindows.Name = "ribbonGroupWindows";
-            this.ribbonGroupWindows.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupWindows, "ribbonGroupWindows");
+            ribbonGroupWindows.AllowTextClipping = false;
+            ribbonGroupWindows.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupWindows.ItemLinks.Add(barMdiChildrenListItem);
+            ribbonGroupWindows.ItemLinks.Add(barContainerWindows);
+            ribbonGroupWindows.MergeOrder = 2;
+            ribbonGroupWindows.Name = "ribbonGroupWindows";
+            resources.ApplyResources(ribbonGroupWindows, "ribbonGroupWindows");
             // 
             // defaultPageGroup
             // 
-            this.defaultPageGroup.AllowTextClipping = false;
-            this.defaultPageGroup.ItemLinks.Add(this.barSubItemPanels);
-            this.defaultPageGroup.MergeOrder = 3;
-            this.defaultPageGroup.Name = "defaultPageGroup";
-            this.defaultPageGroup.ShowCaptionButton = false;
-            resources.ApplyResources(this.defaultPageGroup, "defaultPageGroup");
+            defaultPageGroup.AllowTextClipping = false;
+            defaultPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            defaultPageGroup.ItemLinks.Add(barSubItemPanels);
+            defaultPageGroup.MergeOrder = 3;
+            defaultPageGroup.Name = "defaultPageGroup";
+            resources.ApplyResources(defaultPageGroup, "defaultPageGroup");
             // 
             // toolsPage
             // 
-            this.toolsPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonGroupTools,
-            this.ribbonGroupOptions,
-            this.ribbonGroupDiagnostic});
-            this.toolsPage.Name = "toolsPage";
-            resources.ApplyResources(this.toolsPage, "toolsPage");
+            toolsPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonGroupTools, ribbonGroupOptions, ribbonGroupDiagnostic });
+            toolsPage.Name = "toolsPage";
+            resources.ApplyResources(toolsPage, "toolsPage");
             // 
             // ribbonGroupTools
             // 
-            this.ribbonGroupTools.AllowTextClipping = false;
-            this.ribbonGroupTools.ItemLinks.Add(this.barContainerTools);
-            this.ribbonGroupTools.Name = "ribbonGroupTools";
-            this.ribbonGroupTools.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupTools, "ribbonGroupTools");
+            ribbonGroupTools.AllowTextClipping = false;
+            ribbonGroupTools.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupTools.ItemLinks.Add(barContainerTools);
+            ribbonGroupTools.Name = "ribbonGroupTools";
+            resources.ApplyResources(ribbonGroupTools, "ribbonGroupTools");
             // 
             // ribbonGroupOptions
             // 
-            this.ribbonGroupOptions.AllowTextClipping = false;
-            this.ribbonGroupOptions.ItemLinks.Add(this.barContainerOptions);
-            this.ribbonGroupOptions.Name = "ribbonGroupOptions";
-            this.ribbonGroupOptions.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupOptions, "ribbonGroupOptions");
+            ribbonGroupOptions.AllowTextClipping = false;
+            ribbonGroupOptions.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupOptions.ItemLinks.Add(barContainerOptions);
+            ribbonGroupOptions.Name = "ribbonGroupOptions";
+            resources.ApplyResources(ribbonGroupOptions, "ribbonGroupOptions");
             // 
             // ribbonGroupDiagnostic
             // 
-            this.ribbonGroupDiagnostic.AllowTextClipping = false;
-            this.ribbonGroupDiagnostic.ItemLinks.Add(this.barContainerDiagnostic);
-            this.ribbonGroupDiagnostic.Name = "ribbonGroupDiagnostic";
-            this.ribbonGroupDiagnostic.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonGroupDiagnostic, "ribbonGroupDiagnostic");
+            ribbonGroupDiagnostic.AllowTextClipping = false;
+            ribbonGroupDiagnostic.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            ribbonGroupDiagnostic.ItemLinks.Add(barContainerDiagnostic);
+            ribbonGroupDiagnostic.Name = "ribbonGroupDiagnostic";
+            resources.ApplyResources(ribbonGroupDiagnostic, "ribbonGroupDiagnostic");
             // 
             // windowPage
             // 
-            this.windowPage.Name = "windowPage";
-            resources.ApplyResources(this.windowPage, "windowPage");
+            windowPage.Name = "windowPage";
+            resources.ApplyResources(windowPage, "windowPage");
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.AutoUpdateMergedBars = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonStatusBar.ItemLinks.Add(this.barContainerStatusMessages);
-            this.ribbonStatusBar.ItemLinks.Add(this.barContainerNotifications);
-            resources.ApplyResources(this.ribbonStatusBar, "ribbonStatusBar");
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            // 
-            // dockManager
-            // 
-            this.dockManager.Controller = this.mainBarAndDockingController;
-            this.dockManager.Form = this;
-            this.dockManager.TopZIndexControls.AddRange(new string[] {
-            "DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2",
-            "DevExpress.XtraBars.Ribbon.RibbonStatusBar"});
-            // 
-            // documentManager
-            // 
-            this.documentManager.BarAndDockingController = this.mainBarAndDockingController;
-            this.documentManager.ClientControl = this.viewSitePanel;
-            this.documentManager.MenuManager = this.ribbonControl.Manager;
-            this.documentManager.ShowThumbnailsInTaskBar = DevExpress.Utils.DefaultBoolean.False;
-            this.documentManager.View = this.noDocumentsView;
-            this.documentManager.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
-            this.noDocumentsView,
-            this.tabbedView,
-            this.nativeMdiView});
-            // 
-            // tabbedView
-            // 
-            this.tabbedView.DocumentProperties.MaxTabWidth = 165;
-            this.tabbedView.FloatingDocumentContainer = DevExpress.XtraBars.Docking2010.Views.FloatingDocumentContainer.DocumentsHost;
-            this.tabbedView.OptionsLayout.PropertiesRestoreMode = DevExpress.XtraBars.Docking2010.Views.PropertiesRestoreMode.None;
-            this.tabbedView.AppearancePage.Header.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            this.tabbedView.AppearancePage.Header.Options.UseTextOptions = true;
-            this.tabbedView.AppearancePage.HeaderHotTracked.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            this.tabbedView.AppearancePage.HeaderHotTracked.Options.UseTextOptions = true;
-            // 
-            // nativeMdiView
-            // 
-            this.nativeMdiView.FloatingDocumentContainer = DevExpress.XtraBars.Docking2010.Views.FloatingDocumentContainer.DocumentsHost;
-            // 
-            // viewSiteManager
-            // 
-            this.viewSiteManager.ViewSiteControl = this.viewSitePanel;
-            // 
-            // modelSynchronizationManager
-            // 
-            this.modelSynchronizationManager.ModelSynchronizableComponents.Add(this.formStateModelSynchronizer);
-            this.modelSynchronizationManager.ModelSynchronizableComponents.Add(this.sidePanelActionControlContainer);
-            // 
-            // formStateModelSynchronizer
-            // 
-            this.formStateModelSynchronizer.Form = this;
-            // 
-            // contextMenu
-            // 
-            this.contextMenu.ItemLinks.Add(this.barContainerObjectsCreation, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerSave, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerEdit, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerRecordEdit, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerOpenObject, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerPrint, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerView, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerExport, true);
-            this.contextMenu.ItemLinks.Add(this.barContainerMenu, true);
-            this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Ribbon = this.ribbonControl;
-            //
-            // sidePanelActionControlContainer
-            //
-            this.sidePanelActionControlContainer.ActionCategory = "ViewsNavigation";
-            this.sidePanelActionControlContainer.MenuManager = ribbonControl.Manager;
-            this.sidePanelActionControlContainer.SidePanel = sidePanel;
-            this.sidePanelActionControlContainer.BarSubItemNavigationPane = barSubItemNavigationPane;
+            ribbonStatusBar.AutoUpdateMergedBars = DevExpress.Utils.DefaultBoolean.True;
+            ribbonStatusBar.ItemLinks.Add(barContainerStatusMessages);
+            ribbonStatusBar.ItemLinks.Add(barContainerNotifications);
+            resources.ApplyResources(ribbonStatusBar, "ribbonStatusBar");
+            ribbonStatusBar.Name = "ribbonStatusBar";
+            ribbonStatusBar.Ribbon = ribbonControl;
             // 
             // sidePanel
             // 
-            resources.ApplyResources(this.sidePanel, "sidePanel");
-            this.sidePanel.Name = "sidePanel";
+            resources.ApplyResources(sidePanel, "sidePanel");
+            sidePanel.Name = "sidePanel";
+            // 
+            // dockManager
+            // 
+            dockManager.Controller = mainBarAndDockingController;
+            dockManager.Form = this;
+            dockManager.TopZIndexControls.AddRange(new string[] { "DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2", "DevExpress.XtraBars.Ribbon.RibbonStatusBar" });
+            // 
+            // documentManager
+            // 
+            documentManager.BarAndDockingController = mainBarAndDockingController;
+            documentManager.ClientControl = viewSitePanel;
+            documentManager.ShowThumbnailsInTaskBar = DevExpress.Utils.DefaultBoolean.False;
+            documentManager.View = noDocumentsView;
+            documentManager.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] { noDocumentsView, tabbedView, nativeMdiView });
+            // 
+            // tabbedView
+            // 
+            tabbedView.AppearancePage.Header.Options.UseTextOptions = true;
+            tabbedView.AppearancePage.Header.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
+            tabbedView.AppearancePage.HeaderHotTracked.Options.UseTextOptions = true;
+            tabbedView.AppearancePage.HeaderHotTracked.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
+            tabbedView.DocumentProperties.MaxTabWidth = 165;
+            tabbedView.FloatingDocumentContainer = DevExpress.XtraBars.Docking2010.Views.FloatingDocumentContainer.DocumentsHost;
+            tabbedView.OptionsLayout.PropertiesRestoreMode = DevExpress.XtraBars.Docking2010.Views.PropertiesRestoreMode.None;
+            // 
+            // nativeMdiView
+            // 
+            nativeMdiView.FloatingDocumentContainer = DevExpress.XtraBars.Docking2010.Views.FloatingDocumentContainer.DocumentsHost;
+            // 
+            // viewSiteManager
+            // 
+            viewSiteManager.ViewSiteControl = viewSitePanel;
+            // 
+            // modelSynchronizationManager
+            // 
+            modelSynchronizationManager.ModelSynchronizableComponents.Add(formStateModelSynchronizer);
+            modelSynchronizationManager.ModelSynchronizableComponents.Add(sidePanelActionControlContainer);
+            // 
+            // formStateModelSynchronizer
+            // 
+            formStateModelSynchronizer.Form = this;
+            // 
+            // contextMenu
+            // 
+            contextMenu.ItemLinks.Add(barContainerObjectsCreation, true);
+            contextMenu.ItemLinks.Add(barContainerSave, true);
+            contextMenu.ItemLinks.Add(barContainerEdit, true);
+            contextMenu.ItemLinks.Add(barContainerRecordEdit, true);
+            contextMenu.ItemLinks.Add(barContainerOpenObject, true);
+            contextMenu.ItemLinks.Add(barContainerPrint, true);
+            contextMenu.ItemLinks.Add(barContainerView, true);
+            contextMenu.ItemLinks.Add(barContainerExport, true);
+            contextMenu.ItemLinks.Add(barContainerMenu, true);
+            contextMenu.Name = "contextMenu";
+            contextMenu.Ribbon = ribbonControl;
+            // 
+            // sidePanel1
+            // 
+            resources.ApplyResources(sidePanel1, "sidePanel1");
+            sidePanel1.Name = "sidePanel1";
             // 
             // LightStyleMainRibbonForm1
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.viewSitePanel);
-            this.Controls.Add(this.sidePanel);
-            this.Controls.Add(this.ribbonStatusBar);
-            this.Controls.Add(this.ribbonControl);
-            this.Name = "LightStyleMainRibbonForm1";
-            this.Ribbon = this.ribbonControl;
-            this.StatusBar = this.ribbonStatusBar;
-            ((System.ComponentModel.ISupportInitialize)(this.viewSitePanel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerViewsHistoryNavigation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerObjectsCreation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerSave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerPrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerUndoRedo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerOpenObject)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerExport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerRecordEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerWorkflow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerReports)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerDefault)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerPanels)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerRecordsNavigation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFilters)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerFullTextSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerViewsNavigation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerWindows)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerTools)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerOptions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerDiagnostic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerAbout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barActionContainerNotifications)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sidePanelActionControlContainer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonChooseSkinActionControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barConfigureSkinActionControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainBarAndDockingController)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noDocumentsView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nativeMdiView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contextMenu)).EndInit();
-            this.sidePanel.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(sidePanel1);
+            Controls.Add(viewSitePanel);
+            Controls.Add(sidePanel);
+            Controls.Add(ribbonStatusBar);
+            Controls.Add(ribbonControl);
+            Name = "LightStyleMainRibbonForm1";
+            Ribbon = ribbonControl;
+            StatusBar = ribbonStatusBar;
+            ((System.ComponentModel.ISupportInitialize)viewSitePanel).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sidePanelActionControlContainer).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ribbonControl).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerViewsHistoryNavigation).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerObjectsCreation).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerFile).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerSave).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerPrint).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerEdit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerUndoRedo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerOpenObject).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerExport).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerRecordEdit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerWorkflow).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerReports).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerDefault).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerPanels).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerRecordsNavigation).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerFilters).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerSearch).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerFullTextSearch).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerViewsNavigation).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerWindows).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerTools).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerOptions).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerDiagnostic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerExit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerAbout).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barActionContainerNotifications).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ribbonChooseSkinActionControl).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barConfigureSkinActionControl).EndInit();
+            ((System.ComponentModel.ISupportInitialize)applicationMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)mainBarAndDockingController).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dockManager).EndInit();
+            ((System.ComponentModel.ISupportInitialize)documentManager).EndInit();
+            ((System.ComponentModel.ISupportInitialize)noDocumentsView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tabbedView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nativeMdiView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)contextMenu).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
         #endregion
 
@@ -1148,5 +1087,6 @@
         private DevExpress.XtraBars.BarSubItem barSubItemNavigationPane;
         private DevExpress.XtraEditors.SidePanel sidePanel;
         private DevExpress.ExpressApp.Win.Templates.Navigation.SidePanelActionControlContainer sidePanelActionControlContainer;
+        private DevExpress.XtraEditors.SidePanel sidePanel1;
     }
 }

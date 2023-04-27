@@ -11,12 +11,13 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
+using dxTestSolution.Module.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace InfoPanel.Win {
-    public partial class LightStyleMainRibbonForm1 : RibbonForm, IActionControlsSite, IContextMenuHolder, IWindowTemplate, IDockManagerHolder, IBarManagerHolder, ISupportViewChanged, IXafDocumentsHostWindow, ISupportUpdate, IViewSiteTemplate, ISupportStoreSettings, IViewHolder, ISidePanelHolder {
+    public partial class LightStyleMainRibbonForm1 : RibbonForm, IActionControlsSite, IContextMenuHolder, IWindowTemplate, IDockManagerHolder, IBarManagerHolder, ISupportViewChanged, IXafDocumentsHostWindow, ISupportUpdate, IViewSiteTemplate, ISupportStoreSettings, IViewHolder, ISidePanelHolder, IInfoPanelTemplateWin {
         private static readonly object viewChanged = new object();
         private static readonly object settingsReloaded = new object();
         private UIType uiType;
@@ -250,6 +251,8 @@ namespace InfoPanel.Win {
                 return sidePanel;
             }
         }
+
+        public SidePanel SidePanel => sidePanel1;
         #endregion
     }
 }
