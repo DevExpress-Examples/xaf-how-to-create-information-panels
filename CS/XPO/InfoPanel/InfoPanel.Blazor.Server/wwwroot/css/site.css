@@ -29,3 +29,19 @@ app {
     height: 100%;
     z-index: 100001;
 }
+
+.float-container {
+    border: 3px solid #079A88;
+    padding: 20px;
+    height: 100%;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid #079A88;
+}
+.second-child {
+    background: #CEDEDC;
+}

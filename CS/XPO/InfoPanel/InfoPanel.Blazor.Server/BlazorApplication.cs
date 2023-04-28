@@ -2,8 +2,10 @@
 using DevExpress.ExpressApp.ApplicationBuilder;
 using DevExpress.ExpressApp.Blazor;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Xpo;
 using InfoPanel.Blazor.Server.Services;
+using InfoPanel.Blazor.Server.Templates;
 
 namespace InfoPanel.Blazor.Server;
 
@@ -12,6 +14,12 @@ public class InfoPanelBlazorApplication : BlazorApplication {
         ApplicationName = "InfoPanel";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
         DatabaseVersionMismatch += InfoPanelBlazorApplication_DatabaseVersionMismatch;
+    }
+    protected override IFrameTemplate CreateDefaultTemplate(TemplateContext context) {
+        if (context == TemplateContext.ApplicationWindow) {
+            return new CustomApplicationWindowTemplate() { AboutInfoString = AboutInfo.Instance.GetAboutInfoString(this) };
+        }
+        return base.CreateDefaultTemplate(context);
     }
     protected override void OnSetupStarted() {
         base.OnSetupStarted();

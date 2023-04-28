@@ -11,13 +11,14 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
+using dxTestSolution.Module.BusinessObjects;
 using dxTestSolution.Module.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace InfoPanel.Win {
-    public partial class LightStyleMainRibbonForm1 : RibbonForm, IActionControlsSite, IContextMenuHolder, IWindowTemplate, IDockManagerHolder, IBarManagerHolder, ISupportViewChanged, IXafDocumentsHostWindow, ISupportUpdate, IViewSiteTemplate, ISupportStoreSettings, IViewHolder, ISidePanelHolder, IInfoPanelTemplateWin {
+    public partial class LightStyleMainRibbonForm1 : RibbonForm, IActionControlsSite, IContextMenuHolder, IWindowTemplate, IDockManagerHolder, IBarManagerHolder, ISupportViewChanged, IXafDocumentsHostWindow, ISupportUpdate, IViewSiteTemplate, ISupportStoreSettings, IViewHolder, ISidePanelHolder, ICustomTemplate {
         private static readonly object viewChanged = new object();
         private static readonly object settingsReloaded = new object();
         private UIType uiType;
@@ -233,6 +234,20 @@ namespace InfoPanel.Win {
                 ResumeLayout();
             }
         }
+
+        public void SetCustomString(string _customString) {
+            Label label;
+            if (this.sidePanel1.Controls.Count == 0) {
+                label = new Label();
+                label.Width = 1000;
+                label.Height = 200;
+                this.sidePanel1.Controls.Add(label);
+            } else {
+                label = (Label)this.sidePanel1.Controls[0];
+            }
+            label.Text = _customString;
+        }
+
         event EventHandler ISupportStoreSettings.SettingsReloaded {
             add { Events.AddHandler(settingsReloaded, value); }
             remove { Events.RemoveHandler(settingsReloaded, value); }
@@ -251,8 +266,9 @@ namespace InfoPanel.Win {
                 return sidePanel;
             }
         }
+     
 
-        public SidePanel SidePanel => sidePanel1;
+
         #endregion
     }
 }
