@@ -10,6 +10,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Model.xafml" />
+    <None Update="Properties\launchSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model.xafml">

@@ -17,7 +17,7 @@ namespace dxTestSolution.Module.Controllers {
         private void View_SelectionChanged(object sender, EventArgs e) {
             var infoPanelTemplate = GetTemplate();
             var selectedObjectNames = this.View.SelectedObjects.Cast<Contact>().Select(x => x.FirstName).ToList();
-            var finalString = string.Join(";", selectedObjectNames);
+            var finalString = string.Join("; ", selectedObjectNames);
             infoPanelTemplate.SetCustomString(finalString);
         }
 

@@ -45,3 +45,12 @@ app {
 .second-child {
     background: #CEDEDC;
 }
+
+.content-info-container {
+    display: flex;
+    width: 100%;
+}
+
+.info-panel {
+    flex: 0 0 200px;
+}
