@@ -6,8 +6,10 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [InfoPanelViewControllerWeb.cs](./CS/InfoPanels.Module.Web/Controllers/InfoPanelViewControllerWeb.cs) (VB: [InfoPanelViewControllerWeb.vb](./VB/InfoPanels.Module.Web/Controllers/InfoPanelViewControllerWeb.vb))
-* **[InfoPanelViewControllerWin.cs](./CS/InfoPanels.Module.Win/Controllers/InfoPanelViewControllerWin.cs) (VB: [InfoPanelViewControllerWin.vb](./VB/InfoPanels.Module.Win/Controllers/InfoPanelViewControllerWin.vb))**
+* [MyCustomController.cs](CS/XPO/InfoPanel/InfoPanel.Module/Controllers/MyCustomController.cs) 
+* [CustomApplicationWindowTemplate.cs](CS/XPO/InfoPanel/InfoPanel.Blazor.Server/Templates/CustomApplicationWindowTemplate.cs) 
+
+
 <!-- default file list end -->
 # How to: Create Information Panels
 
