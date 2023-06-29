@@ -3,12 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoPanel.Blazor.Server", "InfoPanel.Blazor.Server\InfoPanel.Blazor.Server.csproj", "{1CC54724-ED5F-45B3-9A2F-A019E04EB07A}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoPanel.Module", "InfoPanel.Module\InfoPanel.Module.csproj", "{EE69C247-D0E3-44F2-9E18-9E088EB349E2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoPanel.Win", "InfoPanel.Win\InfoPanel.Win.csproj", "{DB30742A-271E-4FEF-B3F3-2A316166BE10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoPanel.Blazor.Server", "InfoPanel.Blazor.Server\InfoPanel.Blazor.Server.csproj", "{1CC54724-ED5F-45B3-9A2F-A019E04EB07A}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
