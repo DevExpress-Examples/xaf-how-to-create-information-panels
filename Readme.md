@@ -7,11 +7,12 @@
 
 In certain scenarios you may be required to create additional functional regions in a UI to display specific data. This task can be solved by including additional controls into XAF templates and implementing the code that will supply data to the controls.
 
-!<image here>
+![image](https://github.com/DevExpress-Examples/XAF_how-to-create-information-panels-e2690/assets/14300209/8d289a08-7952-419e-89e4-8aaf05fa6b2d)
+
 
 ## Implementation Details
 
-To accomplish this task create a custom template as described at [Templates](https://docs.devexpress.com/eXpressAppFramework/112609/ui-construction/templates). To this custom template add an UI element that will show the additional information (e.g. [<div>](https://www.w3schools.com/tags/tag_div.ASP)). To pass data to this element, use a dedicated [ViewController](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ViewController) that access the template and pass the required info to it.
+To accomplish this task create a custom template as described at [Templates](https://docs.devexpress.com/eXpressAppFramework/112609/ui-construction/templates). To this custom template add an UI element that will show the additional information (e.g. [div](https://www.w3schools.com/tags/tag_div.ASP)). To pass data to this element, use a dedicated [ViewController](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ViewController) that access the template and pass the required info to it.
 
 > [!WARNING]
 > We created this example for demonstration purposes and didn't intend to address all possible usage scenarios with it.
