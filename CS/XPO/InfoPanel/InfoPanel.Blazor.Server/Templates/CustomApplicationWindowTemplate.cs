@@ -20,11 +20,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace InfoPanel.Blazor.Server.Templates {
-    public class CustomApplicationWindowTemplate : WindowTemplateBase, IMainFormTemplate, IOptimizeRender, ISupportActionsToolbarVisibility, ISelectionDependencyToolbar, ISupportListEditorInlineActions, ISupportListEditorContextMenuActions, ITemplateToolbarProvider, ITabbedMdiMainFormTemplate, ITabbedMdiMainFormTemplateClosing, ICustomTemplate
-    {
+    public class CustomApplicationWindowTemplate : WindowTemplateBase, IMainFormTemplate, IOptimizeRender, ISupportActionsToolbarVisibility, ISelectionDependencyToolbar, ISupportListEditorInlineActions, ISupportListEditorContextMenuActions, ITemplateToolbarProvider, ITabbedMdiMainFormTemplate, ITabbedMdiMainFormTemplateClosing, ICustomTemplate {
         public CustomApplicationWindowTemplate() : this(null) { }
-        public CustomApplicationWindowTemplate(IModelOptionsBlazor modelOptions)
-        {
+        public CustomApplicationWindowTemplate(IModelOptionsBlazor modelOptions) {
             ModelOptionsBlazor = modelOptions;
 
             NavigateBackActionControl = new NavigateBackActionControl();
@@ -34,16 +32,14 @@ namespace InfoPanel.Blazor.Server.Templates {
             ShowNavigationItemActionControl = new ShowNavigationItemActionControl();
             AddActionControl(ShowNavigationItemActionControl);
 
-            HeaderToolbar = new DxToolbarAdapter(new DxToolbarModel()
-            {
+            HeaderToolbar = new DxToolbarAdapter(new DxToolbarModel() {
                 CssClass = "ps-2"
             });
             HeaderToolbar.AddActionContainer(nameof(PredefinedCategory.QuickAccess), ToolbarItemAlignment.Right);
             HeaderToolbar.AddActionContainer(nameof(PredefinedCategory.Notifications), ToolbarItemAlignment.Right);
             HeaderToolbar.AddActionContainer(nameof(PredefinedCategory.Diagnostic), ToolbarItemAlignment.Right);
 
-            if (IsTabbedMdi)
-            {
+            if (IsTabbedMdi) {
                 HeaderToolbar.AddActionContainer(nameof(PredefinedCategory.Tools), ToolbarItemAlignment.Right);
                 ChildTemplates = new ObservableCollection<ITabbedMdiDetailFormTemplate>();
                 TabsModel = new DxTabsModel();
@@ -54,15 +50,13 @@ namespace InfoPanel.Blazor.Server.Templates {
                 TabsModel.ActiveTabIndexChanged = new EventCallback<int>(null, OnActiveTabIndexChanged);
                 TabsModel.CssClass = "xaf-tabbed-mdi h-100";
                 TabsModel.ChildContent = builder => {
-                    foreach (var item in ChildTemplates)
-                    {
+                    foreach (var item in ChildTemplates) {
                         item.IsActive = item == ActiveTemplate;
                         builder.AddContent(0, item.TabPageModel.GetComponentContent());
                     }
                 };
             }
-            else
-            {
+            else {
                 Toolbar = new DxToolbarAdapter(new DxToolbarModel());
                 Toolbar.AddActionContainer(nameof(PredefinedCategory.ObjectsCreation));
                 Toolbar.AddActionContainer(nameof(PredefinedCategory.RecordsNavigation), ToolbarItemAlignment.Right);
@@ -106,50 +100,40 @@ namespace InfoPanel.Blazor.Server.Templates {
         private string customString;
 
         protected IModelOptionsBlazor ModelOptionsBlazor { get; set; }
-        protected override IEnumerable<IActionControlContainer> GetActionControlContainers()
-        {
-            if (IsTabbedMdi)
-            {
+        protected override IEnumerable<IActionControlContainer> GetActionControlContainers() {
+            if (IsTabbedMdi) {
                 return HeaderToolbar.ActionContainers;
             }
             return Toolbar.ActionContainers.Union(HeaderToolbar.ActionContainers.Union(ListEditorActionColumnAdapter.ActionContainers.Union(DxContextMenuAdapter.ActionContainers)));
         }
         protected override RenderFragment CreateComponent() => CustomApplicationWindowTemplateComponent.Create(this);
-        protected override void BeginUpdate()
-        {
+        protected override void BeginUpdate() {
             base.BeginUpdate();
             lockRaiseViewChangedEvents++;
             ((ISupportUpdate)Toolbar)?.BeginUpdate();
             ((ISupportUpdate)TabsModel)?.BeginUpdate();
         }
-        protected override void EndUpdate()
-        {
+        protected override void EndUpdate() {
             ((ISupportUpdate)Toolbar)?.EndUpdate();
             ((ISupportUpdate)TabsModel)?.EndUpdate();
             base.EndUpdate();
-            if (lockRaiseViewChangedEvents > 0)
-            {
+            if (lockRaiseViewChangedEvents > 0) {
                 lockRaiseViewChangedEvents--;
-                if (lockRaiseViewChangedEvents == 0 && containsPendingEvent)
-                {
+                if (lockRaiseViewChangedEvents == 0 && containsPendingEvent) {
                     containsPendingEvent = false;
                     RefreshTabs();
                 }
             }
         }
-        public void CloseViewTemplate(ITabbedMdiDetailFormTemplate childTemplate)
-        {
+        public void CloseViewTemplate(ITabbedMdiDetailFormTemplate childTemplate) {
             ChildTemplates.Remove(childTemplate);
             TemplateClosed?.Invoke(this, new DetailFormTemplateChangedEventArgs(childTemplate));
         }
-        public void TryAddChildTemplate(ITabbedMdiDetailFormTemplate childTemplate)
-        {
-            if (childTemplate is null)
-            {
+        public void TryAddChildTemplate(ITabbedMdiDetailFormTemplate childTemplate) {
+            if (childTemplate is null) {
                 return;
             }
-            if (!ChildTemplates.Contains(childTemplate))
-            {
+            if (!ChildTemplates.Contains(childTemplate)) {
                 ChildTemplates.Add(childTemplate);
 
                 childTemplate.Activated += ChildTemplate_Activated;
@@ -158,32 +142,27 @@ namespace InfoPanel.Blazor.Server.Templates {
             SetActiveTemplate(childTemplate);
         }
 
-        private void ChildTemplate_Activated(object sender, EventArgs e)
-        {
+        private void ChildTemplate_Activated(object sender, EventArgs e) {
             var activeTemplate = (ITabbedMdiDetailFormTemplate)sender;
 
             SetActiveTemplate(activeTemplate);
             ActiveTemplateChanged?.Invoke(this, new DetailFormTemplateChangedEventArgs(activeTemplate));
         }
 
-        private void OnActiveTabIndexChanged(int index)
-        {
-            if (index >= 0 && index < ChildTemplates.Count)
-            {
+        private void OnActiveTabIndexChanged(int index) {
+            if (index >= 0 && index < ChildTemplates.Count) {
                 SetActiveTemplateIndex(index);
                 RefreshTabs();
                 ActiveTemplateChanged?.Invoke(this, new DetailFormTemplateChangedEventArgs(ChildTemplates[index]));
             }
         }
-        private void ChildTemplate_Closed(object sender, EventArgs e)
-        {
+        private void ChildTemplate_Closed(object sender, EventArgs e) {
             var childTemplate = (ITabbedMdiDetailFormTemplate)sender;
 
             DetailFormTemplateClosingEventArgs detailFormTemplateClosingEventArgs = new DetailFormTemplateClosingEventArgs(childTemplate);
             Closing?.Invoke(this, detailFormTemplateClosingEventArgs);
 
-            if (detailFormTemplateClosingEventArgs.Cancel)
-            {
+            if (detailFormTemplateClosingEventArgs.Cancel) {
                 return;
             }
 
@@ -193,39 +172,30 @@ namespace InfoPanel.Blazor.Server.Templates {
             CloseViewTemplate(childTemplate);
         }
 
-        public void RemoveChildTemplate(ITabbedMdiDetailFormTemplate childTemplate)
-        {
+        public void RemoveChildTemplate(ITabbedMdiDetailFormTemplate childTemplate) {
             ChildTemplates.Remove(childTemplate);
         }
-        public void RefreshTabs()
-        {
-            if (lockRaiseViewChangedEvents == 0)
-            {
+        public void RefreshTabs() {
+            if (lockRaiseViewChangedEvents == 0) {
                 ChildTemplatesChanged?.Invoke(this, EventArgs.Empty);
             }
-            else
-            {
+            else {
                 containsPendingEvent = true;
             }
         }
-        public void SetActiveTemplate(ITabbedMdiDetailFormTemplate childTemplate)
-        {
+        public void SetActiveTemplate(ITabbedMdiDetailFormTemplate childTemplate) {
             var activeIndex = ChildTemplates.IndexOf(childTemplate);
             SetActiveTemplateIndex(activeIndex);
             RefreshTabs();
         }
-        public void SetActiveTemplateIndex(int index)
-        {
+        public void SetActiveTemplateIndex(int index) {
             ActiveTemplateIndex = index;
             TabsModel.ActiveTabIndex = ActiveTemplateIndex;
         }
         public int ActiveTemplateIndex { get; private set; } = 0;
-        public ITabbedMdiDetailFormTemplate ActiveTemplate
-        {
-            get
-            {
-                if (ActiveTemplateIndex >= 0 && ChildTemplates.Count > ActiveTemplateIndex)
-                {
+        public ITabbedMdiDetailFormTemplate ActiveTemplate {
+            get {
+                if (ActiveTemplateIndex >= 0 && ChildTemplates.Count > ActiveTemplateIndex) {
                     return ChildTemplates[ActiveTemplateIndex];
                 }
                 return null;
@@ -248,10 +218,8 @@ namespace InfoPanel.Blazor.Server.Templates {
         public event EventHandler<DetailFormTemplateChangedEventArgs> TemplateClosed;
         public event EventHandler<DetailFormTemplateClosingEventArgs> Closing;
 
-        void ISupportActionsToolbarVisibility.SetVisible(bool isVisible)
-        {
-            if (Toolbar is not null)
-            {
+        void ISupportActionsToolbarVisibility.SetVisible(bool isVisible) {
+            if (Toolbar is not null) {
                 Toolbar.Visible = isVisible;
             }
         }
@@ -259,13 +227,11 @@ namespace InfoPanel.Blazor.Server.Templates {
         public string CustomString { get => customString; set { customString = value; OnPropertyChanged(); } }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
+        void OnPropertyChanged([CallerMemberName] string propertyName = null) {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public void SetCustomString(string _customString)
-        {
+        public void SetCustomString(string _customString) {
             CustomString = _customString;
         }
     }
