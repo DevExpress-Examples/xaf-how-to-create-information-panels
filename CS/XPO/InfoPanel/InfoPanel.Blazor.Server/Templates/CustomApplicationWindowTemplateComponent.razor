@@ -20,10 +20,8 @@
                 <div class="header-logo mx-3"></div>
             </div>
             <div class="header-right-side">
-                @if (!FrameTemplate.IsTabbedMdi)
-                {
-                    @FrameTemplate.NavigateBackActionControl.GetComponentContent()
-                    ;
+                @if (!FrameTemplate.IsTabbedMdi) {
+                    @FrameTemplate.NavigateBackActionControl.GetComponentContent();
                 }
                 <div role="heading" aria-level="1">
                     <ViewCaptionComponent WindowCaption="@FrameTemplate" />
@@ -47,8 +45,7 @@
                 </div>
             </div>
             <div class="sidebar-sm-shadow"></div>
-            @if (FrameTemplate.IsTabbedMdi)
-            {
+            @if (FrameTemplate.IsTabbedMdi) {
                 <div role="main" class="w-100 overflow-auto">
                     <SizeModeContainer>
                         <ComponentModelObserver ComponentModel="@FrameTemplate.TabsModel">
@@ -57,8 +54,7 @@
                     </SizeModeContainer>
                 </div>
             }
-            else
-            {
+            else {
                 <div id="main-view-content" role="main" class="main xaf-flex-auto overflow-hidden d-flex" tabindex="-1">
                     <SizeModeContainer>
                         <XafErrorBoundary>
