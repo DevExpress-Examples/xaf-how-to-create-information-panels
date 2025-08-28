@@ -1,5 +1,4 @@
 ﻿using DevExpress.Blazor;
-using DevExpress.CodeParser.VB;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Blazor.Components.Models;
 using DevExpress.ExpressApp.Blazor.Editors.ActionControls;
@@ -14,7 +13,6 @@ using DevExpress.ExpressApp.Templates.ActionControls;
 using DevExpress.Persistent.Base;
 using dxTestSolution.Module.Controllers;
 using Microsoft.AspNetCore.Components;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
