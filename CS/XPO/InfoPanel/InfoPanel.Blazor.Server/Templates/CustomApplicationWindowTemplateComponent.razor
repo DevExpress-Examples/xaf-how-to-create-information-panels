@@ -66,7 +66,7 @@
                     </SizeModeContainer>
                 </div>
             }
-            <div class="info-panel">@FrameTemplate.CustomString</div>
+            <InfoPanelComponent FrameTemplate="@FrameTemplate" />
         </div>
     </XafErrorBoundary>
 </div>
@@ -80,16 +80,5 @@
     protected override async Task InvokeAfterViewChangedJS() {
         await JSRuntime.InvokeVoidAsync("xaf.closeSideBarIfMobile");
         await base.InvokeAfterViewChangedJS();
-    }
-    protected override void OnInitialized() {
-        FrameTemplate.PropertyChanged += OnFrameTemplatePropertyChanged;
-    }
-
-    private void OnFrameTemplatePropertyChanged(object sender, PropertyChangedEventArgs args) {
-        AllowNextRender = true;
-        StateHasChanged();
-    }
-    public void Dispose() {
-        FrameTemplate.PropertyChanged -= OnFrameTemplatePropertyChanged;
     }
 }

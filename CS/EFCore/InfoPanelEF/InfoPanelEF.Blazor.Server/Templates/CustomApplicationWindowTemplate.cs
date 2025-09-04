@@ -219,12 +219,15 @@ namespace InfoPanelEF.Blazor.Server.Templates {
                 Toolbar.Visible = isVisible;
             }
         }
-
-        public string CustomString { get => customString; set { customString = value; OnPropertyChanged(); } }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged([CallerMemberName] string propertyName = null) {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        public event EventHandler CustomStringChanged;
+        public string CustomString {
+            get => customString;
+            set {
+                if (customString != value) {
+                    customString = value;
+                    CustomStringChanged?.Invoke(this, EventArgs.Empty);
+                }
+            }
         }
 
         public void SetCustomString(string _customString) {
