@@ -1,0 +1,18 @@
+﻿<div class="info-panel">
+    @FrameTemplate.CustomString
+</div>
+
+@code {
+    [Parameter]
+    public CustomApplicationWindowTemplate FrameTemplate { get; set; }
+    protected override void OnInitialized() {
+        FrameTemplate.CustomStringChanged += OnFrameTemplateCustomStringChanged;
+    }
+
+    private void OnFrameTemplateCustomStringChanged(object sender, EventArgs args) {
+        StateHasChanged();
+    }
+    public void Dispose() {
+        FrameTemplate.CustomStringChanged -= OnFrameTemplateCustomStringChanged;
+    }
+}

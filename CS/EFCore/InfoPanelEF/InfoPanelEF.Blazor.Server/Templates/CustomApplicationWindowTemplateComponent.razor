@@ -1,73 +1,84 @@
 ﻿@using DevExpress.ExpressApp
 @using DevExpress.ExpressApp.Blazor
 @using DevExpress.ExpressApp.Blazor.Components
+@using DevExpress.ExpressApp.Blazor.Components.Models
 @using DevExpress.ExpressApp.Blazor.Templates
+@using DevExpress.ExpressApp.Utils
 @using Microsoft.JSInterop
 @using System.ComponentModel
 @implements IDisposable
 
 @inherits FrameTemplateComponentBase<CustomApplicationWindowTemplate>
-<div id="main-window-template-component" class="app h-100 d-flex flex-column">
+<div id="main-window-template-component" class="app">
+    <SkipToMainContentLink />
     <ComponentModelObserver ComponentModel="@FrameTemplate.NavigateBackActionControl.ButtonModel">
-
-        <div class="header d-flex flex-row shadow-sm navbar-dark flex-nowrap @DetailViewHeaderClass @NavigateBackActionHeaderClass">
-
-            <div class="header-left-side d-flex align-items-center ps-2">
-                <button onclick="xaf.toggleSideBar()" class="btn-hamburger p-0 btn btn-secondary btn-header">
+        <div role="banner" class="header navbar-dark @DetailViewHeaderClass @NavigateBackActionHeaderClass">
+            <div class="header-left-side">
+                <button class="btn-hamburger dxbl-btn dxbl-btn-standalone btn-secondary btn-header" data-visible-label="@HideNavigationBtnTitle" data-hidden-label="@ShowNavigationBtnTitle">
                     <XafImage ImageName="Hamburger" Size="24" Styles="margin: auto;" />
                 </button>
                 <div class="header-logo mx-3"></div>
             </div>
-            <div class="header-right-side w-100 overflow-hidden d-flex align-items-center ps-4">
-                @FrameTemplate.NavigateBackActionControl.GetComponentContent()
-                <ViewCaptionComponent WindowCaption="@FrameTemplate" />
-                @FrameTemplate.AccountComponent.GetComponentContent()
-                <SettingsComponent />
-            </div>
-        </div>
-
-    </ComponentModelObserver>
-    <div class="xaf-flex-auto overflow-hidden d-flex">
-        <div class="xaf-sidebar sidebar d-none d-sm-flex flex-column">
-            @FrameTemplate.ShowNavigationItemActionControl.GetComponentContent()
-            <div class="about-info mx-3 mb-4">
-                @((MarkupString)FrameTemplate.AboutInfoString)
-            </div>
-        </div>
-        <div class="sidebar-sm-shadow" onclick="xaf.toggleSideBar()"></div>
-        <div class="content-info-container">
-            <div class="main xaf-flex-auto overflow-hidden d-flex flex-column">
+            <div class="header-right-side">
+                @if (!FrameTemplate.IsTabbedMdi) {
+                    @FrameTemplate.NavigateBackActionControl.GetComponentContent();
+                }
+                <div role="heading" aria-level="1">
+                    <ViewCaptionComponent WindowCaption="@FrameTemplate" />
+                </div>
                 <SizeModeContainer>
-                    @if(FrameTemplate.IsActionsToolbarVisible && @FrameTemplate.Toolbar.ContainsVisibleActionControl()) {
-                        <div class="main-toolbar py-3 px-2 px-sm-3">@FrameTemplate.Toolbar.GetComponentContent()</div>
-                    }
-                    <div class="main-content xaf-flex-auto overflow-auto pb-3 px-2 px-sm-3">
-                        <ViewSiteComponent View="@FrameTemplate.View" />
-                    </div>
+                    @FrameTemplate.HeaderToolbar.GetComponentContent()
                 </SizeModeContainer>
+                <div class="d-flex ms-auto">
+                    @FrameTemplate.AccountComponent.GetComponentContent()
+                    <SettingsComponent />
+                </div>
             </div>
-            <div class="info-panel">@FrameTemplate.CustomString</div>
         </div>
-    </div>
+    </ComponentModelObserver>
+    <XafErrorBoundary>
+        <div class="xaf-flex-auto overflow-hidden d-flex">
+            <div class="xaf-sidebar sidebar d-none d-sm-flex">
+                @FrameTemplate.ShowNavigationItemActionControl.GetComponentContent()
+                <div class="about-info">
+                    @((MarkupString)FrameTemplate.AboutInfoString)
+                </div>
+            </div>
+            <div class="sidebar-sm-shadow"></div>
+            @if (FrameTemplate.IsTabbedMdi) {
+                <div role="main" class="w-100 overflow-auto">
+                    <SizeModeContainer>
+                        <ComponentModelObserver ComponentModel="@FrameTemplate.TabsModel">
+                            @FrameTemplate.TabsModel.GetComponentContent()
+                        </ComponentModelObserver>
+                    </SizeModeContainer>
+                </div>
+            }
+            else {
+                <div id="main-view-content" role="main" class="main xaf-flex-auto overflow-hidden d-flex" tabindex="-1">
+                    <SizeModeContainer>
+                        <XafErrorBoundary>
+                            <div class="main-toolbar">@FrameTemplate.Toolbar.GetComponentContent()</div>
+                            <div class="main-content xaf-flex-auto">
+                                <ViewSiteComponent ViewHolder="@FrameTemplate" />
+                            </div>
+                        </XafErrorBoundary>
+                    </SizeModeContainer>
+                </div>
+            }
+            <InfoPanelComponent FrameTemplate="@FrameTemplate" />
+        </div>
+    </XafErrorBoundary>
 </div>
 
 @code {
-    public static RenderFragment Create(CustomApplicationWindowTemplate applicationWindowTemplate) => @<CustomApplicationWindowTemplateComponent FrameTemplate="@applicationWindowTemplate" />;
+    public static RenderFragment Create(CustomApplicationWindowTemplate mainFormTemplate) => @<CustomApplicationWindowTemplateComponent FrameTemplate="@mainFormTemplate" />;
     private string DetailViewHeaderClass => FrameTemplate.View is DetailView ? "xaf-detail-view-header" : default;
     private string NavigateBackActionHeaderClass => FrameTemplate.NavigateBackActionControl.Visible ? "xaf-show-navigate-back-action" : default;
+    private string HideNavigationBtnTitle => CaptionHelper.GetLocalizedText("VisualComponents/Header", "HideNavigationPane");
+    private string ShowNavigationBtnTitle => CaptionHelper.GetLocalizedText("VisualComponents/Header", "ShowNavigationPane");
     protected override async Task InvokeAfterViewChangedJS() {
         await JSRuntime.InvokeVoidAsync("xaf.closeSideBarIfMobile");
         await base.InvokeAfterViewChangedJS();
-    }
-    protected override void OnInitialized() {
-        FrameTemplate.PropertyChanged += OnFrameTemplatePropertyChanged;
-    }
-
-    private void OnFrameTemplatePropertyChanged(object sender, PropertyChangedEventArgs args) {
-        StateHasChanged();
-    }
-
-    public void Dispose() {
-        FrameTemplate.PropertyChanged -= OnFrameTemplatePropertyChanged;
     }
 }
