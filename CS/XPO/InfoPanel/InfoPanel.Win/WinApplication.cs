@@ -14,7 +14,6 @@ public class InfoPanelWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "InfoPanel";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += InfoPanelWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += InfoPanelWindowsFormsApplication_CustomizeLanguagesList;
     }
